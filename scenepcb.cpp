@@ -5,18 +5,23 @@
 #include <QtMath>
 #include "linepcb.h"
 #include <QKeyEvent>
+#include "boolmap.h"
+#include <QDebug>
 ScenePCB::ScenePCB(const QRectF &rect, QObject *parent )
     :QGraphicsScene(rect,parent) {
-    //addXLines
+    //addVerticalLines
     for(int i=0; i<=rect.right(); i+=gridOffset)
         backgroundLines.push_back(QLine(i,0,i,rect.bottom()));
-    //addYLines
+    //addHoisontalLines
     for(int i=0; i<=rect.bottom(); i+=gridOffset)
         backgroundLines.push_back(QLine(0,i,rect.right(),i));
+
+    auto space = new boolMap(rect.toRect());
+    space->toString(qDebug());
     //SceneRectVisualization
-    addRect(rect,QPen(QBrush(Qt::GlobalColor::white),2));
-    addItem(crossArrows);
-    setBackgroundBrush(QBrush(Qt::GlobalColor::black));
+    this->addRect(rect,QPen(QBrush(Qt::GlobalColor::white),2));
+    this->addItem(crossArrows);
+    this->setBackgroundBrush(QBrush(Qt::GlobalColor::black));
 }
 ScenePCB::ScenePCB(qreal x, qreal y, qreal width, qreal height, QObject *parent)
     :QGraphicsScene(x,y,width,height,parent){
@@ -57,10 +62,11 @@ void ScenePCB::moveCrossArrows(QGraphicsSceneMouseEvent *event){
     if(this->sceneRect().contains(event->scenePos()) )
         crossArrows->setPos( mouseXPos - crossArrowsWidth, mouseYPos - crossArrowsHeight);
     //redrawBackground
-    invalidate(sceneRect(),QGraphicsScene::BackgroundLayer);
+    this->invalidate(sceneRect(),QGraphicsScene::BackgroundLayer);
+    //throw method
     emit getCrossArrowsPosition(QPointF(mouseXPos,mouseYPos));
 }
-LinePCB *ScenePCB::lineCreation(const QPointF &start, const QPointF &end)
+LinePCB* ScenePCB::lineCreation(const QPointF &start, const QPointF &end)
 {
     auto line = new LinePCB(start,end);
     line->setColor(crossArrows->getColor());
@@ -93,23 +99,25 @@ void ScenePCB::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 }
 void ScenePCB::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
-        if(event->button() == Qt::MouseButton::LeftButton && lineCheckFlag){
+        if(event->button() == Qt::MouseButton::LeftButton && lineCheckFlag == true){
             if(firstMouseClickChecker == true){
                 if(linesStack.empty())
                     return;
                 if(auto lineOnScene = dynamic_cast<LinePCB*>(linesStack.pop()); lineOnScene){
-                    lineOnScene->setToolTip(QString {"( " + QString::number(lineOnScene->line().p1().x())
-                                                     + " , "+QString::number(lineOnScene->line().p1().y())
-                                                     + " ) -> ( "
-                                                     + QString::number(lineOnScene->line().p2().x())
-                                                     + " , "
-                                                     + QString::number(lineOnScene->line().p2().y())
-                                                     + " )\n"});
+                    lineOnScene->setToolTip(QString {
+                                                "( "
+                                                + QString::number(lineOnScene->line().p1().x())
+                                                + " , "+QString::number(lineOnScene->line().p1().y())
+                                                + " ) -> ( "
+                                                + QString::number(lineOnScene->line().p2().x())
+                                                + " , "
+                                                + QString::number(lineOnScene->line().p2().y())
+                                                + " )\n"});
                     lineOnScene->setOpacity(1);
-
+                    // if line.startPoint == line.endPoint -> delete
                     if(lineOnScene->line().p1() == lineOnScene->line().p2())
                         removeItem(lineOnScene);
-                    //EmitForGCodeWidget
+                    //Trow EmitForGCodeWidget
                     emit itemAppented(dynamic_cast<QGraphicsItem*>(lineOnScene));
                     update();
                     firstMouseClickChecker=false;

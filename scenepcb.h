@@ -12,11 +12,12 @@ private:
     QVector<QLine> backgroundLines = QVector<QLine>();
     QStack<QGraphicsItem*> linesStack  = QStack<QGraphicsItem*> ();
     CrossArrows* crossArrows = new CrossArrows(QRect(0,0,100,100));
+    LinePCB* lineCreation(const QPointF& start, const QPointF& end);
+
     int gridOffset = 100;
     bool lineCheckFlag = false;
     bool firstMouseClickChecker = false;
     void moveCrossArrows(QGraphicsSceneMouseEvent *event);
-    LinePCB* lineCreation(const QPointF& start, const QPointF& end);
 public:
     ScenePCB(const QRectF& rect, QObject* parent = nullptr);
     ScenePCB (qreal x, qreal y, qreal width, qreal height, QObject *parent = nullptr);

@@ -50,6 +50,8 @@ else()
             ${PROJECT_SOURCES}
             linepcbpropertydialog.h linepcbpropertydialog.cpp
             gcodewidget.h gcodewidget.cpp
+            boolmap.h boolmap.cpp
+
         )
     endif()
 endif()
