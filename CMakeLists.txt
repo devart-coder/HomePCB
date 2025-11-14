@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 4.1.2)
 
 project(HomePCB VERSION 0.1 LANGUAGES CXX)
 
@@ -12,27 +12,31 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 
+include_directories(${PROJECT_SOURCE_DIR}/include)
 set(PROJECT_SOURCES
         main.cpp
-        homepcbmain.cpp
-        crossarrows.cpp
-        crossarrowstoolbar.cpp
-        scenepcb.cpp
-        graphicsviewer.cpp
-        linepcb.cpp
+        src/crossarrows.cpp
+        src/crossarrowstoolbar.cpp
+        src/gcodewidget.cpp
+        src/graphicsviewer.cpp
+        src/homepcbmain.cpp
+        src/linepcb.cpp
+        src/linepcbpropertydialog.cpp
+        src/scenepcb.cpp
 
-        homepcbmain.h
-        crossarrows.h
-        crossarrowstoolbar.h
-        scenepcb.h
-        graphicsviewer.h
-        linepcb.h
+        include/crossarrows.h
+        include/crossarrowstoolbar.h
+        include/gcodewidget.h
+        include/graphicsviewer.h
+        include/homepcbmain.h
+        include/linepcb.h
+        include/linepcbpropertydialog.h
+        include/scenepcb.h
 )
-
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
-    qt_add_executable(untitled
+    qt_add_executable(HomePCB
         MANUAL_FINALIZATION
-        ${PROJECT_SOURCES}
+        ${PROJECT_SOURCES} ${PROJECT_HEADERS}
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET untitled APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
@@ -40,24 +44,18 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(untitled SHARED
+        add_library(HomePCB SHARED
             ${PROJECT_SOURCES}
         )
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
         add_executable(HomePCB
-            ${PROJECT_SOURCES}
-            linepcbpropertydialog.h linepcbpropertydialog.cpp
-            gcodewidget.h gcodewidget.cpp
-            boolmap.h boolmap.cpp
-
+            ${PROJECT_SOURCES} ${PROJECT_HEADERS}
         )
     endif()
 endif()
-
 target_link_libraries(HomePCB PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
-
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
 # If you are developing for iOS or macOS you should consider setting an
 # explicit, fixed bundle identifier manually though.
@@ -80,5 +78,5 @@ install(TARGETS HomePCB
 )
 
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_finalize_executable(untitled)
+    qt_finalize_executable(HomePCB)
 endif()

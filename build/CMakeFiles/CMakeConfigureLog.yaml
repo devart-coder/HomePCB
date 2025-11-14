@@ -1,0 +1,882 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.12.56_1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/devart/Development/Cpp/HomePCB/build/CMakeFiles/3.30.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-qQRQfm"
+      binary: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-qQRQfm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-qQRQfm'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_f4063
+        [1/2] /bin/g++   -v -o CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -c /home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/bin/g++
+        Target: x86_64-unknown-linux-gnu
+        Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c,c++,objc,obj-c++,fortran,lto,go,ada
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.1 20250405 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f4063.dir/'
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/cc1plus -quiet -v -D_GNU_SOURCE /home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4063.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccIB5BC0.s
+        GNU C++17 (GCC) version 14.2.1 20250405 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 14.2.1 20250405, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../x86_64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include
+         /usr/local/include
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: d91c39a812dad8e706eddcfd1b8404ee
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f4063.dir/'
+         as -v --64 -o CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIB5BC0.s
+        GNU assembler version 2.44 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /bin/g++  -v -Wl,-v CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f4063   && :
+        Using built-in specs.
+        COLLECT_GCC=/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c,c++,objc,obj-c++,fortran,lto,go,ada
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.1 20250405 (GCC) 
+        COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4063' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f4063.'
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/collect2 -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsVjoSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4063 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o
+        collect2 version 14.2.1 20250405
+        /usr/bin/ld -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsVjoSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4063 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4063' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f4063.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1] ==> [/usr/include/c++/14.2.1]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu] ==> [/usr/include/c++/14.2.1/x86_64-unknown-linux-gnu]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward] ==> [/usr/include/c++/14.2.1/backward]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include] ==> [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed] ==> [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14.2.1;/usr/include/c++/14.2.1/x86_64-unknown-linux-gnu;/usr/include/c++/14.2.1/backward;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include;/usr/local/include;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-qQRQfm']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_f4063]
+        ignore line: [[1/2] /bin/g++   -v -o CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -c /home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/g++]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c c++ objc obj-c++ fortran lto go ada]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.1 20250405 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f4063.dir/']
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/cc1plus -quiet -v -D_GNU_SOURCE /home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_f4063.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccIB5BC0.s]
+        ignore line: [GNU C++17 (GCC) version 14.2.1 20250405 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.1 20250405  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: d91c39a812dad8e706eddcfd1b8404ee]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f4063.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccIB5BC0.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /bin/g++  -v -Wl -v CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f4063   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c c++ objc obj-c++ fortran lto go ada]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.1 20250405 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_f4063' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_f4063.']
+        link line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/collect2 -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsVjoSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4063 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccsVjoSu.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_f4063] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o]
+          arg [-L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1] ==> dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1]
+          arg [-L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../..] ==> dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 14.2.1 20250405]
+        ignore line: [/usr/bin/ld -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccsVjoSu.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_f4063 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_f4063.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1] ==> [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1]
+        collapse library dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../..] ==> [/usr/lib64]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1;/usr/lib64;/lib64]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib64/cmake/Qt6/Qt6Dependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib64/cmake/Qt6/Qt6Config.cmake:182 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-pWLU3G"
+      binary: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-pWLU3G"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-pWLU3G'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_732b6
+        [1/2] /bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_732b6.dir/src.cxx.o -c /home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-pWLU3G/src.cxx
+        [2/2] : && /bin/g++   CMakeFiles/cmTC_732b6.dir/src.cxx.o -o cmTC_732b6   && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/Internal/CheckSourceCompiles.cmake:101 (try_compile)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CheckCXXSourceCompiles.cmake:52 (cmake_check_source_compiles)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/FindThreads.cmake:99 (CHECK_CXX_SOURCE_COMPILES)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/home/devart/.espressif/tools/cmake/3.30.2/share/cmake-3.30/Modules/CMakeFindDependencyMacro.cmake:76 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib64/cmake/Qt6/Qt6Dependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib64/cmake/Qt6/Qt6Config.cmake:182 (include)"
+      - "CMakeLists.txt:10 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-gk04F3"
+      binary: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-gk04F3"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-gk04F3'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_0dd18
+        [1/2] /bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_0dd18.dir/src.cxx.o -c /home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-gk04F3/src.cxx
+        [2/2] : && /bin/g++   CMakeFiles/cmTC_0dd18.dir/src.cxx.o -o cmTC_0dd18   && :
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Linux - 6.12.57_1 - x86_64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/usr/share/cmake-4.1/Modules/"
+    found: "/usr/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/lib/jvm/default-jdk/bin"
+        - "/usr/lib/jvm/default-jre/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /bin/g++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/devart/Development/Cpp/HomePCB/build/CMakeFiles/4.1.2/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "/usr/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-jLSbTB"
+      binary: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-jLSbTB"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-jLSbTB'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_6a382
+        [1/2] /bin/g++   -v -o CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/bin/g++
+        Target: x86_64-unknown-linux-gnu
+        Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c,c++,objc,obj-c++,fortran,lto,go,ada
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.1 20250405 (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6a382.dir/'
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6a382.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccUsAnJU.s
+        GNU C++17 (GCC) version 14.2.1 20250405 (x86_64-unknown-linux-gnu)
+        	compiled by GNU C version 14.2.1 20250405, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
+        
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../x86_64-unknown-linux-gnu/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include
+         /usr/local/include
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed
+         /usr/include
+        End of search list.
+        Compiler executable checksum: d91c39a812dad8e706eddcfd1b8404ee
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6a382.dir/'
+         as -v --64 -o CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUsAnJU.s
+        GNU assembler version 2.44 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.44
+        COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.'
+        [2/2] : && /bin/g++  -v -Wl,-v CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6a382   && :
+        Using built-in specs.
+        COLLECT_GCC=/bin/g++
+        COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper
+        Target: x86_64-unknown-linux-gnu
+        Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c,c++,objc,obj-c++,fortran,lto,go,ada
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.1 20250405 (GCC) 
+        COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/
+        LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a382' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6a382.'
+         /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/collect2 -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv52Ckf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a382 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o
+        collect2 version 14.2.1 20250405
+        /usr/bin/ld -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv52Ckf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a382 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.44
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a382' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6a382.'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:217 (message)"
+      - "/usr/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include]
+          add: [/usr/local/include]
+          add: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1] ==> [/usr/include/c++/14.2.1]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu] ==> [/usr/include/c++/14.2.1/x86_64-unknown-linux-gnu]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward] ==> [/usr/include/c++/14.2.1/backward]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include] ==> [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed] ==> [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14.2.1;/usr/include/c++/14.2.1/x86_64-unknown-linux-gnu;/usr/include/c++/14.2.1/backward;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include;/usr/local/include;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "/usr/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-jLSbTB']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/ninja -v cmTC_6a382]
+        ignore line: [[1/2] /bin/g++   -v -o CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/g++]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c c++ objc obj-c++ fortran lto go ada]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.1 20250405 (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6a382.dir/']
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/cc1plus -quiet -v -D_GNU_SOURCE /usr/share/cmake-4.1/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_6a382.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccUsAnJU.s]
+        ignore line: [GNU C++17 (GCC) version 14.2.1 20250405 (x86_64-unknown-linux-gnu)]
+        ignore line: [	compiled by GNU C version 14.2.1 20250405  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
+        ignore line: []
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring nonexistent directory "/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../x86_64-unknown-linux-gnu/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/x86_64-unknown-linux-gnu]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../include/c++/14.2.1/backward]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/include-fixed]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Compiler executable checksum: d91c39a812dad8e706eddcfd1b8404ee]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6a382.dir/']
+        ignore line: [ as -v --64 -o CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccUsAnJU.s]
+        ignore line: [GNU assembler version 2.44 (x86_64-unknown-linux-gnu) using BFD version (GNU Binutils) 2.44]
+        ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [[2/2] : && /bin/g++  -v -Wl -v CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_6a382   && :]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/bin/g++]
+        ignore line: [COLLECT_LTO_WRAPPER=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper]
+        ignore line: [Target: x86_64-unknown-linux-gnu]
+        ignore line: [Configured with: /builddir/gcc-14.2.1+20250405/configure --build=x86_64-unknown-linux-gnu --enable-gnu-unique-object --enable-vtable-verify --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --libexecdir=/usr/lib64 --libdir=/usr/lib64 --enable-threads=posix --enable-__cxa_atexit --disable-multilib --with-system-zlib --enable-shared --enable-lto --enable-plugins --enable-linker-build-id --disable-werror --disable-nls --enable-default-pie --enable-default-ssp --enable-checking=release --disable-libstdcxx-pch --with-isl --with-linker-hash-style=gnu --disable-sjlj-exceptions --disable-target-libiberty --disable-libssp --enable-languages=c c++ objc obj-c++ fortran lto go ada]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 14.2.1 20250405 (GCC) ]
+        ignore line: [COMPILER_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/]
+        ignore line: [LIBRARY_PATH=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_6a382' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_6a382.']
+        link line: [ /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/collect2 -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv52Ckf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a382 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccv52Ckf.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_6a382] ==> ignore
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o]
+          arg [-L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1] ==> dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1]
+          arg [-L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64] ==> dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../..] ==> dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../..]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o]
+          arg [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+        ignore line: [collect2 version 14.2.1 20250405]
+        ignore line: [/usr/bin/ld -plugin /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/liblto_plugin.so -plugin-opt=/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccv52Ckf.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_6a382 /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../.. -v CMakeFiles/cmTC_6a382.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o /usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/Scrt1.o] ==> [/usr/lib64/Scrt1.o]
+        collapse obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1] ==> [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1]
+        collapse library dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/../../..] ==> [/usr/lib64]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/Scrt1.o;/usr/lib64/crti.o;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtbeginS.o;/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1/crtendS.o;/usr/lib64/crtn.o]
+        implicit dirs: [/usr/lib64/gcc/x86_64-unknown-linux-gnu/14.2.1;/usr/lib64;/lib64]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "/usr/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake:104 (try_compile)"
+      - "/usr/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake:103 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-4.1/Modules/FindThreads.cmake:99 (check_cxx_source_compiles)"
+      - "/usr/share/cmake-4.1/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "/usr/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake:78 (find_package)"
+      - "/usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake:36 (find_dependency)"
+      - "/usr/lib64/cmake/Qt6/Qt6Dependencies.cmake:37 (_qt_internal_find_third_party_dependencies)"
+      - "/usr/lib64/cmake/Qt6/Qt6Config.cmake:182 (include)"
+      - "CMakeLists.txt:9 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-XHuIT2"
+      binary: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-XHuIT2"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/cmake/Qt6;/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules;/usr/lib/cmake/Qt6/3rdparty/kwin"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-XHuIT2'
+        
+        Run Build Command(s): /usr/bin/ninja -v cmTC_ff215
+        [1/2] /bin/g++ -DCMAKE_HAVE_LIBC_PTHREAD  -std=gnu++17 -o CMakeFiles/cmTC_ff215.dir/src.cxx.o -c /home/devart/Development/Cpp/HomePCB/build/CMakeFiles/CMakeScratch/TryCompile-XHuIT2/src.cxx
+        [2/2] : && /bin/g++   CMakeFiles/cmTC_ff215.dir/src.cxx.o -o cmTC_ff215   && :
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "/usr/lib64/cmake/Qt6/Qt6Config.cmake:243 (find_package)"
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Qt6Widgets"
+    configs:
+      -
+        filename: "Qt6WidgetsConfig.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6widgets-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "optional"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6Widgets"
+      search_paths:
+        - "/usr/lib64/cmake"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: false
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/pkgRedirects/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/pkgRedirects/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsConfig.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6WidgetsTools/qt6widgets-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found: null
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/lib/jvm/default-jdk/bin"
+        - "/usr/lib/jvm/default-jre/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:9 (find_package)"
+    name: "Qt6"
+    components:
+      -
+        name: "Widgets"
+        required: true
+        found: false
+    configs:
+      -
+        filename: "Qt6Config.cmake"
+        kind: "cmake"
+      -
+        filename: "qt6-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "Qt6"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/pkgRedirects/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/home/devart/Development/Cpp/HomePCB/build/CMakeFiles/pkgRedirects/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/local/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimelinePrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimelinePrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimelineBlendTreesPrivate/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimelineBlendTrees/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimelineBlendTrees/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimeline/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6QuickTimeline/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6Qml/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6Qml/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6BuildInternals/Qt6Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "/usr/lib64/cmake/Qt6BuildInternals/qt6-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+    found:
+      path: "/usr/lib64/cmake/Qt6/Qt6Config.cmake"
+      mode: "config"
+      version: "6.10.0"
+    search_context:
+      ENV{PATH}:
+        - "/usr/local/sbin"
+        - "/usr/local/bin"
+        - "/usr/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/bin"
+        - "/usr/lib/jvm/default-jdk/bin"
+        - "/usr/lib/jvm/default-jre/bin"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "/usr/local"
+        - "/usr"
+        - "/"
+        - "/usr"
+        - "/usr/local"
+        - "/usr/X11R6"
+        - "/usr/pkg"
+        - "/opt"
+      CMAKE_MODULE_PATH:
+        - "/usr/lib/cmake/Qt6"
+        - "/usr/lib/cmake/Qt6/3rdparty/extra-cmake-modules/find-modules"
+        - "/usr/lib/cmake/Qt6/3rdparty/kwin"
+...
