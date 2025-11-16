@@ -2,61 +2,72 @@
 #include <QPainter>
 #include <QGraphicsSceneMouseEvent>
 #include <QDebug>
-CrossArrows::CrossArrows(const QRectF &rectangle, QGraphicsItem* parent)
-    :circle(rectangle),QGraphicsRectItem(rectangle){
-}
+CrossArrows::CrossArrows(const QRectF& rectangle, const QPen& pen, const QBrush& brush, QGraphicsItem* parent)
+    :spot(std::make_unique<QRectF>(rectangle))
+    ,QGraphicsRectItem(rectangle)
+{
 
+    this->setRect(rectangle);
+    this->setPen(pen);
+    this->setBrush(brush);
+}
 QRectF CrossArrows::boundingRect() const
 {
     return rect();
 }
-QPointF CrossArrows::getCenter() const
+QPointF CrossArrows::getSpotCenter() const
 {
-    return circle.center();
+    return spot->center();
 }
-qreal CrossArrows::getDiameter() const
+
+qreal CrossArrows::getSpotDiameter() const
 {
-    return circle.width();
+    return spot->width();
 }
-QColor CrossArrows::getColor() const
-{
-    return circleBrush.color();
-}
-void CrossArrows::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
+void CrossArrows::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget )
 {
     painter->setCompositionMode(QPainter::CompositionMode_SourceAtop);
-    if(circleDrawFlag){
+    painter->setPen(pen());
+    if(spotVisible){
+        //drawACircle
         painter->save();
-        painter->setBrush(circleBrush);
+        painter->setBrush(brush());
         painter->setOpacity(0.5);
-        painter->drawEllipse(rect().center(),circle.width()/2,circle.height()/2);
+        painter->drawEllipse( rect().center(), spot->width()/2, spot->height()/2 );
         painter->restore();
+        //drawLineAroundCircle
+        painter->drawEllipse( rect().center(), spot->width()/2, spot->height()/2 );
     }
-    painter->setPen(QPen(Qt::GlobalColor::white,2));
-    if(circleDrawFlag)
-        painter->drawEllipse( rect().center(),circle.width()/2,circle.height()/2);
-    painter->drawLine( rect().height()/2,0,rect().height()/2,rect().bottom());
-    painter->drawLine(0,rect().width()/2,rect().right(),rect().width()/2);
+    //drawCrossLines
+    painter->drawLine( rect().height()/2, 0, rect().height()/2, rect().bottom());
+    painter->drawLine( 0, rect().width()/2, rect().right(), rect().width()/2);
 }
-void CrossArrows::drawCircle(bool flag)
+void CrossArrows::spotVisionToogle()
 {
-    circleDrawFlag = flag;
+    spotVisible = (spotVisible == false) ? true : false;
 }
-bool CrossArrows::isCircleDrawed()
+bool CrossArrows::spotIsDrawed() const
 {
-    return circleDrawFlag;
+    return spotVisible;
 }
-void CrossArrows::setCircleDiameter(double diameter)
+void CrossArrows::setSpotDiameter(double diameter)
 {
-    circle.setWidth(diameter);
-    circle.setHeight(diameter);
+    spot->setWidth(diameter);
+    spot->setHeight(diameter);
+
     rect().setWidth(qMax(diameter,rect().width()));
     rect().setWidth(qMax(diameter,rect().height()));
     update();
 }
-void CrossArrows::setColor(const QColor &color)
+void CrossArrows::setSpotColor(const QColor &color)
 {
-    circleBrush.setColor(color);
+    auto br=this->brush();
+    br.setColor(color);
+    this->setBrush(br);
     update();
     emit colorChanged(color);
+}
+QColor CrossArrows::getSpotColor() const
+{
+    return brush().color();
 }

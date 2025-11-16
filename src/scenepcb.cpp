@@ -65,7 +65,7 @@ void ScenePCB::moveCrossArrows(QGraphicsSceneMouseEvent *event){
 LinePCB* ScenePCB::lineCreation(const QPointF &start, const QPointF &end)
 {
     auto line = new LinePCB(start,end);
-    line->setColor(crossArrows->getColor());
+    line->setColor(crossArrows->getSpotColor());
 
     // //conections
      connect(line,&LinePCB::destroyed,[=](auto itemPointer){
@@ -77,7 +77,7 @@ LinePCB* ScenePCB::lineCreation(const QPointF &start, const QPointF &end)
      for(auto&& v : line->getLinePropertyDialog()->getLinePropertiesVector())
          v->setRange(0,sceneRect().right());
 
-    line->setDiameter(crossArrows->getDiameter());
+    line->setDiameter(crossArrows->getSpotDiameter());
     linesStack.push_back(line);
     return line;
 }

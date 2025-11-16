@@ -7,17 +7,19 @@ CrossArrowToolBar::CrossArrowToolBar(CrossArrows* cursor,QWidget *parent)
     hBox->addWidget(new QLabel("Diameter "));
     d->setSuffix(" mm");
     d->setRange(0,250);
-    d->setValue(cursor->getDiameter());
+    d->setValue(cursor->getSpotDiameter());
     hBox->addWidget(d);
     hBox->addWidget(new QLabel("Color "));
     colorsList->addItems(QStringList{"Red", "Green", "Blue", "Yellow" ,"Gray" ,"White"});
     hBox->addWidget(colorsList);
     setLayout(hBox);
-
     connect(d,&QDoubleSpinBox::textChanged,[cursor](QString d){
-        cursor->setCircleDiameter(int(d.split(" ")[0].toDouble()));
+        bool ok;
+        cursor->setSpotDiameter(d.split(" ").first().replace(',',".").toDouble(&ok));
+        if(!ok)
+            qDebug() << "Conversion from String to Double failed";
     });
     connect(colorsList,&QComboBox::currentTextChanged,[cursor](QString colorName){
-        cursor->setColor(QColor(colorName));
+        cursor->setSpotColor(QColor(colorName));
     });
 }
