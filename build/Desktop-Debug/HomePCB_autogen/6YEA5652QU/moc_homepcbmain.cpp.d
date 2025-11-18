@@ -7,6 +7,7 @@
   /home/devart/Development/Cpp/HomePCB/include/linepcb.h \
   /home/devart/Development/Cpp/HomePCB/include/linepcbpropertydialog.h \
   /home/devart/Development/Cpp/HomePCB/include/scenepcb.h \
+  /home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -419,6 +420,7 @@
   /usr/include/qt6/QtCore/qyieldcpu.h \
   /usr/include/qt6/QtGui/QBrush \
   /usr/include/qt6/QtGui/QColor \
+  /usr/include/qt6/QtGui/QPainter \
   /usr/include/qt6/QtGui/QPen \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \

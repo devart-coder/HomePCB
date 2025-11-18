@@ -13,16 +13,19 @@ find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
-include_directories(${PROJECT_SOURCE_DIR}/include)
+include_directories(
+    include
+    src/cursor/
+)
 set(PROJECT_SOURCES
         main.cpp
-        src/crossarrows.cpp
-        src/crossarrowstoolbar.cpp
+        src/cursor/crossarrows.cpp
+        src/toolsbar/crossarrowstoolbar.cpp
         src/gcodewidget.cpp
         src/graphicsviewer.cpp
         src/homepcbmain.cpp
-        src/linepcb.cpp
-        src/linepcbpropertydialog.cpp
+        src/shapes/linepcb.cpp
+        src/shapes/settings/linepcbpropertydialog.cpp
         src/scenepcb.cpp
 
         include/crossarrows.h
@@ -33,11 +36,13 @@ set(PROJECT_SOURCES
         include/linepcb.h
         include/linepcbpropertydialog.h
         include/scenepcb.h
+        src/cursor/SpotF.h src/cursor/SpotF.cpp
 )
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(HomePCB
         MANUAL_FINALIZATION
-        ${PROJECT_SOURCES} ${PROJECT_HEADERS}
+        ${PROJECT_SOURCES}
+        src/cursor/SpotF.h src/cursor/SpotF.cpp
 
     )
 # Define target properties for Android with Qt 6 as:
@@ -54,6 +59,7 @@ else()
     else()
         add_executable(HomePCB
             ${PROJECT_SOURCES} ${PROJECT_HEADERS}
+            src/cursor/SpotF.h src/cursor/SpotF.cpp
         )
     endif()
 endif()

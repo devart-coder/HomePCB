@@ -8,31 +8,23 @@
 #include <QBrush>
 #include <QColor>
 #include <QPen>
-
+#include <SpotF.h>
 class CrossArrows : public QObject, public QGraphicsRectItem
 {
 private://Fields
     Q_OBJECT
-    bool spotVisible = false;
-    std::unique_ptr<QRectF> spot;
+    SpotF* spot_v;
 public://Constructors
     CrossArrows( const QRectF& rectangle,
                  const QPen& pen = QPen (Qt::GlobalColor::white,2),
                  const QBrush& brush = QBrush(Qt::GlobalColor::red),
-                 QGraphicsItem *parent = nullptr);
+                 QGraphicsItem *parent = nullptr) noexcept;
 public://Methods
     QRectF boundingRect() const override;
-    QPointF getSpotCenter() const;
-    qreal getSpotDiameter() const;
-    QColor getSpotColor()	const;
+    SpotF* spot();
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget) override;
-    bool spotIsDrawed() const;
 signals:
     void colorChanged(const QColor&);
-public slots:
-    void spotVisionToogle();
-    void setSpotDiameter(double diameter);
-    void setSpotColor(const QColor& color);
 };
 
 #endif // CROSSARROWS_H

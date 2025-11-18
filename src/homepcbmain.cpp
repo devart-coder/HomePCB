@@ -83,12 +83,12 @@ QToolBar* HomePCBMain::graphicsToolsInitialize()
     connect(addLine,&QAction::toggled,[this](bool flag){
         auto scene = dynamic_cast<ScenePCB*>(pcbViewer->scene());
         if(flag){
-            scene->getCrossArrows()->spotVisionToogle();
+            scene->getCrossArrows()->spot()->show();//spotVisionToogle();
             scene->getLineCheckFlag(true);
             pcbTools->setVisible(true);
         }
         else{
-            scene->getCrossArrows()->spotVisionToogle();
+            scene->getCrossArrows()->spot()->hide();
             pcbTools->setVisible(false);
             scene->getLineCheckFlag(false);
         }

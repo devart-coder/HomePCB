@@ -13,14 +13,16 @@ HomePCB_autogen/timestamp: \
 	/home/devart/Development/Cpp/HomePCB/include/linepcbpropertydialog.h \
 	/home/devart/Development/Cpp/HomePCB/include/scenepcb.h \
 	/home/devart/Development/Cpp/HomePCB/main.cpp \
-	/home/devart/Development/Cpp/HomePCB/src/crossarrows.cpp \
-	/home/devart/Development/Cpp/HomePCB/src/crossarrowstoolbar.cpp \
+	/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.cpp \
+	/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h \
+	/home/devart/Development/Cpp/HomePCB/src/cursor/crossarrows.cpp \
 	/home/devart/Development/Cpp/HomePCB/src/gcodewidget.cpp \
 	/home/devart/Development/Cpp/HomePCB/src/graphicsviewer.cpp \
 	/home/devart/Development/Cpp/HomePCB/src/homepcbmain.cpp \
-	/home/devart/Development/Cpp/HomePCB/src/linepcb.cpp \
-	/home/devart/Development/Cpp/HomePCB/src/linepcbpropertydialog.cpp \
 	/home/devart/Development/Cpp/HomePCB/src/scenepcb.cpp \
+	/home/devart/Development/Cpp/HomePCB/src/shapes/linepcb.cpp \
+	/home/devart/Development/Cpp/HomePCB/src/shapes/settings/linepcbpropertydialog.cpp \
+	/home/devart/Development/Cpp/HomePCB/src/toolsbar/crossarrowstoolbar.cpp \
 	/usr/include/alloca.h \
 	/usr/include/asm-generic/bitsperlong.h \
 	/usr/include/asm-generic/errno-base.h \
@@ -433,6 +435,7 @@ HomePCB_autogen/timestamp: \
 	/usr/include/qt6/QtCore/qyieldcpu.h \
 	/usr/include/qt6/QtGui/QBrush \
 	/usr/include/qt6/QtGui/QColor \
+	/usr/include/qt6/QtGui/QPainter \
 	/usr/include/qt6/QtGui/QPen \
 	/usr/include/qt6/QtGui/qaction.h \
 	/usr/include/qt6/QtGui/qbitmap.h \

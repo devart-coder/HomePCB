@@ -554,6 +554,12 @@
 			"MU",
 			"6YEA5652QU/moc_scenepcb.cpp",
 			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h",
+			"MU",
+			"NFYAP3MOR4/moc_SpotF.cpp",
+			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -570,6 +576,7 @@
 	"MOC_INCLUDES" : 
 	[
 		"/home/devart/Development/Cpp/HomePCB/include",
+		"/home/devart/Development/Cpp/HomePCB/src/cursor",
 		"/usr/include/qt6/QtCore",
 		"/usr/include/qt6",
 		"/usr/lib64/qt6/mkspecs/linux-g++",
@@ -618,12 +625,12 @@
 	[
 		[ "/home/devart/Development/Cpp/HomePCB/main.cpp", "MU", null ],
 		[
-			"/home/devart/Development/Cpp/HomePCB/src/crossarrows.cpp",
+			"/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/devart/Development/Cpp/HomePCB/src/crossarrowstoolbar.cpp",
+			"/home/devart/Development/Cpp/HomePCB/src/cursor/crossarrows.cpp",
 			"MU",
 			null
 		],
@@ -642,13 +649,22 @@
 			"MU",
 			null
 		],
-		[ "/home/devart/Development/Cpp/HomePCB/src/linepcb.cpp", "MU", null ],
+		[ "/home/devart/Development/Cpp/HomePCB/src/scenepcb.cpp", "MU", null ],
 		[
-			"/home/devart/Development/Cpp/HomePCB/src/linepcbpropertydialog.cpp",
+			"/home/devart/Development/Cpp/HomePCB/src/shapes/linepcb.cpp",
 			"MU",
 			null
 		],
-		[ "/home/devart/Development/Cpp/HomePCB/src/scenepcb.cpp", "MU", null ]
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/shapes/settings/linepcbpropertydialog.cpp",
+			"MU",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/toolsbar/crossarrowstoolbar.cpp",
+			"MU",
+			null
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

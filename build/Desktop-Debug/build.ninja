@@ -54,7 +54,7 @@ build CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o: CXX_COMPILE
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/HomePCB_autogen
 
@@ -63,34 +63,34 @@ build CMakeFiles/HomePCB.dir/main.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir
 
-build CMakeFiles/HomePCB.dir/src/crossarrows.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/crossarrows.cpp || cmake_object_order_depends_target_HomePCB
+build CMakeFiles/HomePCB.dir/src/cursor/crossarrows.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/cursor/crossarrows.cpp || cmake_object_order_depends_target_HomePCB
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/crossarrows.cpp.o.d
+  DEP_FILE = CMakeFiles/HomePCB.dir/src/cursor/crossarrows.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/cursor
 
-build CMakeFiles/HomePCB.dir/src/crossarrowstoolbar.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/crossarrowstoolbar.cpp || cmake_object_order_depends_target_HomePCB
+build CMakeFiles/HomePCB.dir/src/toolsbar/crossarrowstoolbar.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/toolsbar/crossarrowstoolbar.cpp || cmake_object_order_depends_target_HomePCB
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/crossarrowstoolbar.cpp.o.d
+  DEP_FILE = CMakeFiles/HomePCB.dir/src/toolsbar/crossarrowstoolbar.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/toolsbar
 
 build CMakeFiles/HomePCB.dir/src/gcodewidget.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/gcodewidget.cpp || cmake_object_order_depends_target_HomePCB
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/src/gcodewidget.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
 
@@ -99,7 +99,7 @@ build CMakeFiles/HomePCB.dir/src/graphicsviewer.cpp.o: CXX_COMPILER__HomePCB_uns
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/src/graphicsviewer.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
 
@@ -108,36 +108,45 @@ build CMakeFiles/HomePCB.dir/src/homepcbmain.cpp.o: CXX_COMPILER__HomePCB_unscan
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/src/homepcbmain.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
 
-build CMakeFiles/HomePCB.dir/src/linepcb.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/linepcb.cpp || cmake_object_order_depends_target_HomePCB
+build CMakeFiles/HomePCB.dir/src/shapes/linepcb.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/shapes/linepcb.cpp || cmake_object_order_depends_target_HomePCB
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/linepcb.cpp.o.d
+  DEP_FILE = CMakeFiles/HomePCB.dir/src/shapes/linepcb.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/shapes
 
-build CMakeFiles/HomePCB.dir/src/linepcbpropertydialog.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/linepcbpropertydialog.cpp || cmake_object_order_depends_target_HomePCB
+build CMakeFiles/HomePCB.dir/src/shapes/settings/linepcbpropertydialog.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/shapes/settings/linepcbpropertydialog.cpp || cmake_object_order_depends_target_HomePCB
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/linepcbpropertydialog.cpp.o.d
+  DEP_FILE = CMakeFiles/HomePCB.dir/src/shapes/settings/linepcbpropertydialog.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
+  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/shapes/settings
 
 build CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/scenepcb.cpp || cmake_object_order_depends_target_HomePCB
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
+
+build CMakeFiles/HomePCB.dir/src/cursor/SpotF.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.cpp || cmake_object_order_depends_target_HomePCB
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/HomePCB.dir/src/cursor/SpotF.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/include -I/home/devart/Development/Cpp/HomePCB/src/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = CMakeFiles/HomePCB.dir
+  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/cursor
 
 
 # =============================================================================
@@ -147,7 +156,7 @@ build CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o: CXX_COMPILER__HomePCB_unscanned
 #############################################
 # Link the executable HomePCB
 
-build HomePCB: CXX_EXECUTABLE_LINKER__HomePCB_Debug CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o CMakeFiles/HomePCB.dir/main.cpp.o CMakeFiles/HomePCB.dir/src/crossarrows.cpp.o CMakeFiles/HomePCB.dir/src/crossarrowstoolbar.cpp.o CMakeFiles/HomePCB.dir/src/gcodewidget.cpp.o CMakeFiles/HomePCB.dir/src/graphicsviewer.cpp.o CMakeFiles/HomePCB.dir/src/homepcbmain.cpp.o CMakeFiles/HomePCB.dir/src/linepcb.cpp.o CMakeFiles/HomePCB.dir/src/linepcbpropertydialog.cpp.o CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o | /usr/lib/libQt6Widgets.so.6.10.0 /usr/lib/libQt6Gui.so.6.10.0 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.10.0 || HomePCB_autogen HomePCB_autogen_timestamp_deps
+build HomePCB: CXX_EXECUTABLE_LINKER__HomePCB_Debug CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o CMakeFiles/HomePCB.dir/main.cpp.o CMakeFiles/HomePCB.dir/src/cursor/crossarrows.cpp.o CMakeFiles/HomePCB.dir/src/toolsbar/crossarrowstoolbar.cpp.o CMakeFiles/HomePCB.dir/src/gcodewidget.cpp.o CMakeFiles/HomePCB.dir/src/graphicsviewer.cpp.o CMakeFiles/HomePCB.dir/src/homepcbmain.cpp.o CMakeFiles/HomePCB.dir/src/shapes/linepcb.cpp.o CMakeFiles/HomePCB.dir/src/shapes/settings/linepcbpropertydialog.cpp.o CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o CMakeFiles/HomePCB.dir/src/cursor/SpotF.cpp.o | /usr/lib/libQt6Widgets.so.6.10.0 /usr/lib/libQt6Gui.so.6.10.0 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.10.0 || HomePCB_autogen HomePCB_autogen_timestamp_deps
   CONFIG = Debug
   DEP_FILE = CMakeFiles/HomePCB.dir/link.d
   FLAGS = -g

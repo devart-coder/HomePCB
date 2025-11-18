@@ -1,5 +1,6 @@
 /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/6YEA5652QU/moc_crossarrows.cpp: /home/devart/Development/Cpp/HomePCB/include/crossarrows.h \
   /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/moc_predefs.h \
+  /home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -397,6 +398,7 @@
   /usr/include/qt6/QtCore/qyieldcpu.h \
   /usr/include/qt6/QtGui/QBrush \
   /usr/include/qt6/QtGui/QColor \
+  /usr/include/qt6/QtGui/QPainter \
   /usr/include/qt6/QtGui/QPen \
   /usr/include/qt6/QtGui/qaction.h \
   /usr/include/qt6/QtGui/qbitmap.h \
@@ -411,6 +413,7 @@
   /usr/include/qt6/QtGui/qimage.h \
   /usr/include/qt6/QtGui/qkeysequence.h \
   /usr/include/qt6/QtGui/qpaintdevice.h \
+  /usr/include/qt6/QtGui/qpainter.h \
   /usr/include/qt6/QtGui/qpainterpath.h \
   /usr/include/qt6/QtGui/qpalette.h \
   /usr/include/qt6/QtGui/qpen.h \
@@ -420,6 +423,7 @@
   /usr/include/qt6/QtGui/qregion.h \
   /usr/include/qt6/QtGui/qrgb.h \
   /usr/include/qt6/QtGui/qrgba64.h \
+  /usr/include/qt6/QtGui/qtextoption.h \
   /usr/include/qt6/QtGui/qtgui-config.h \
   /usr/include/qt6/QtGui/qtguiexports.h \
   /usr/include/qt6/QtGui/qtguiglobal.h \
