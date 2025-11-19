@@ -508,57 +508,57 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/devart/Development/Cpp/HomePCB/include/crossarrows.h",
+			"/home/devart/Development/Cpp/HomePCB/src/cursor/Cursor.h",
 			"MU",
-			"6YEA5652QU/moc_crossarrows.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/include/crossarrowstoolbar.h",
-			"MU",
-			"6YEA5652QU/moc_crossarrowstoolbar.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/include/gcodewidget.h",
-			"MU",
-			"6YEA5652QU/moc_gcodewidget.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/include/graphicsviewer.h",
-			"MU",
-			"6YEA5652QU/moc_graphicsviewer.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/include/homepcbmain.h",
-			"MU",
-			"6YEA5652QU/moc_homepcbmain.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/include/linepcb.h",
-			"MU",
-			"6YEA5652QU/moc_linepcb.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/include/linepcbpropertydialog.h",
-			"MU",
-			"6YEA5652QU/moc_linepcbpropertydialog.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/include/scenepcb.h",
-			"MU",
-			"6YEA5652QU/moc_scenepcb.cpp",
+			"NFYAP3MOR4/moc_Cursor.cpp",
 			null
 		],
 		[
 			"/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h",
 			"MU",
 			"NFYAP3MOR4/moc_SpotF.cpp",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/gcodewidget.h",
+			"MU",
+			"UVLADIE3JM/moc_gcodewidget.cpp",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/graphicsviewer.h",
+			"MU",
+			"UVLADIE3JM/moc_graphicsviewer.cpp",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/homepcbmain.h",
+			"MU",
+			"UVLADIE3JM/moc_homepcbmain.cpp",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/linepcb.h",
+			"MU",
+			"UVLADIE3JM/moc_linepcb.cpp",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/linepcbpropertydialog.h",
+			"MU",
+			"UVLADIE3JM/moc_linepcbpropertydialog.cpp",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/scenepcb.h",
+			"MU",
+			"UVLADIE3JM/moc_scenepcb.cpp",
+			null
+		],
+		[
+			"/home/devart/Development/Cpp/HomePCB/src/tools/CursorToolbar.h",
+			"MU",
+			"MR466ZQLAD/moc_CursorToolbar.cpp",
 			null
 		]
 	],
@@ -575,8 +575,9 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/devart/Development/Cpp/HomePCB/include",
 		"/home/devart/Development/Cpp/HomePCB/src/cursor",
+		"/home/devart/Development/Cpp/HomePCB/src/tools",
+		"/home/devart/Development/Cpp/HomePCB/src",
 		"/usr/include/qt6/QtCore",
 		"/usr/include/qt6",
 		"/usr/lib64/qt6/mkspecs/linux-g++",
@@ -625,12 +626,12 @@
 	[
 		[ "/home/devart/Development/Cpp/HomePCB/main.cpp", "MU", null ],
 		[
-			"/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.cpp",
+			"/home/devart/Development/Cpp/HomePCB/src/cursor/Cursor.cpp",
 			"MU",
 			null
 		],
 		[
-			"/home/devart/Development/Cpp/HomePCB/src/cursor/crossarrows.cpp",
+			"/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.cpp",
 			"MU",
 			null
 		],
@@ -661,7 +662,7 @@
 			null
 		],
 		[
-			"/home/devart/Development/Cpp/HomePCB/src/toolsbar/crossarrowstoolbar.cpp",
+			"/home/devart/Development/Cpp/HomePCB/src/tools/CursorToolbar.cpp",
 			"MU",
 			null
 		]

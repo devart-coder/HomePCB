@@ -83,12 +83,12 @@ QToolBar* HomePCBMain::graphicsToolsInitialize()
     connect(addLine,&QAction::toggled,[this](bool flag){
         auto scene = dynamic_cast<ScenePCB*>(pcbViewer->scene());
         if(flag){
-            scene->getCrossArrows()->spot()->show();//spotVisionToogle();
+            scene->cursor()->spot()->show();//spotVisionToogle();
             scene->getLineCheckFlag(true);
             pcbTools->setVisible(true);
         }
         else{
-            scene->getCrossArrows()->spot()->hide();
+            scene->cursor()->spot()->hide();
             pcbTools->setVisible(false);
             scene->getLineCheckFlag(false);
         }
@@ -115,7 +115,7 @@ QToolBar *HomePCBMain::pcbToolsInitialize()
     QToolBar* pcbTools = new QToolBar("PCBToolsBar");
     pcbTools->setMovable(false);
     pcbTools->setFloatable(false);
-    pcbTools->addWidget(new CrossArrowToolBar(dynamic_cast<ScenePCB*>(pcbViewer->scene())->getCrossArrows()));
+    pcbTools->addWidget(new CrossArrowToolBar(dynamic_cast<ScenePCB*>(pcbViewer->scene())->cursor()));
     return pcbTools;
 }
 HomePCBMain::HomePCBMain(QWidget *parent)
@@ -149,7 +149,7 @@ HomePCBMain::HomePCBMain(QWidget *parent)
     setStatusBar(statusBar);
 
     //Watch crossArrows coordinates from Scene inside StatusBar
-    connect(dynamic_cast<ScenePCB*>(pcbViewer->scene()), &ScenePCB::getCrossArrowsPosition, [this](auto&& mousePoint){
+    connect(dynamic_cast<ScenePCB*>(pcbViewer->scene()), &ScenePCB::getCursorPosition, [this](auto&& mousePoint){
         crossArrowsPos->setText("X " + QString().setNum(mousePoint.x()) + "\n" + "Y " + QString().setNum(mousePoint.y()) );
     });
 

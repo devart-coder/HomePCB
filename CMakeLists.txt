@@ -14,13 +14,12 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Core)
 
 include_directories(
-    include
-    src/cursor/
+    src/cursor
+    src/tools
+    src/
 )
 set(PROJECT_SOURCES
         main.cpp
-        src/cursor/crossarrows.cpp
-        src/toolsbar/crossarrowstoolbar.cpp
         src/gcodewidget.cpp
         src/graphicsviewer.cpp
         src/homepcbmain.cpp
@@ -28,15 +27,16 @@ set(PROJECT_SOURCES
         src/shapes/settings/linepcbpropertydialog.cpp
         src/scenepcb.cpp
 
-        include/crossarrows.h
-        include/crossarrowstoolbar.h
-        include/gcodewidget.h
-        include/graphicsviewer.h
-        include/homepcbmain.h
-        include/linepcb.h
-        include/linepcbpropertydialog.h
-        include/scenepcb.h
+        src/gcodewidget.h
+        src/graphicsviewer.h
+        src/homepcbmain.h
+        src/linepcb.h
+        src/linepcbpropertydialog.h
+        src/scenepcb.h
+
         src/cursor/SpotF.h src/cursor/SpotF.cpp
+        src/cursor/Cursor.h src/cursor/Cursor.cpp
+        src/tools/CursorToolbar.cpp src/tools/CursorToolbar.h
 )
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(HomePCB

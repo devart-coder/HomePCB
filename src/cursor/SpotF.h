@@ -14,7 +14,7 @@ public:
           QGraphicsItem *parent = nullptr) noexcept;
 public:
     //Shared
-    QRectF boundingRect()			const noexcept;
+    QRectF boundingRect() ;
     QPainterPath shape()  			const noexcept;
     qreal getDiameter() 			const noexcept;
     QColor getColor() 				const noexcept;

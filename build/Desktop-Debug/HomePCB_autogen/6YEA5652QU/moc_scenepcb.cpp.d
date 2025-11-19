@@ -1,8 +1,8 @@
 /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/6YEA5652QU/moc_scenepcb.cpp: /home/devart/Development/Cpp/HomePCB/include/scenepcb.h \
   /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/moc_predefs.h \
-  /home/devart/Development/Cpp/HomePCB/include/crossarrows.h \
   /home/devart/Development/Cpp/HomePCB/include/linepcb.h \
   /home/devart/Development/Cpp/HomePCB/include/linepcbpropertydialog.h \
+  /home/devart/Development/Cpp/HomePCB/src/cursor/Cursor.h \
   /home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -272,6 +272,7 @@
   /usr/include/qt6/QtCore/QDebug \
   /usr/include/qt6/QtCore/QLine \
   /usr/include/qt6/QtCore/QLineF \
+  /usr/include/qt6/QtCore/QList \
   /usr/include/qt6/QtCore/QObject \
   /usr/include/qt6/QtCore/QPoint \
   /usr/include/qt6/QtCore/QPointF \

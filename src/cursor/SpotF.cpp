@@ -7,38 +7,31 @@ SpotF::SpotF(const QRectF &rect, const QPen &pen, const QBrush &brush, QGraphics
     this->setPen(pen);
     this->setBrush(brush);
 }
-
-QRectF SpotF::boundingRect() const noexcept
+QRectF SpotF::boundingRect()
 {
-    return this->rect();
+    return rect();
 }
-
 QPainterPath SpotF::shape() const noexcept
 {
     return this->shape();
 }
-
 qreal SpotF::getDiameter() const noexcept
 {
     return this->rect().width();
 }
-
 void SpotF::setDiameter(double d)
 {
     auto r = this->rect();
     this->setRect(r.center().x()-d/2, r.center().y()-d/2, d, d);
 }
-
 QColor SpotF::getColor() const noexcept
 {
     return this->brush().color();
 }
-
 void SpotF::setColor(const QColor &c)
 {
     this->setBrush(QBrush(c));
 }
-
 void SpotF::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     painter->save();

@@ -7,7 +7,7 @@
 #include <QPoint>
 #include <QDebug>
 #include <QVBoxLayout>
-#include "crossarrows.h"
+#include "Cursor.h"
 #include "linepcb.h"
 GraphicsViewer::GraphicsViewer(QGraphicsScene *scene, QWidget *parent)
     : QGraphicsView(scene,parent){

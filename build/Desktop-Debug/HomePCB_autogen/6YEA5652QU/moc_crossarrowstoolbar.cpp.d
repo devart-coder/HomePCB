@@ -1,6 +1,6 @@
 /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/6YEA5652QU/moc_crossarrowstoolbar.cpp: /home/devart/Development/Cpp/HomePCB/include/crossarrowstoolbar.h \
   /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/moc_predefs.h \
-  /home/devart/Development/Cpp/HomePCB/include/crossarrows.h \
+  /home/devart/Development/Cpp/HomePCB/src/cursor/Cursor.h \
   /home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
