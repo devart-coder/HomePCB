@@ -1,0 +1,6 @@
+add_subdirectory(shapes)
+add_subdirectory(graphicsviews)
+add_subdirectory(homepcb)
+add_subdirectory(scene)
+add_subdirectory(viewer)
+add_subdirectory(widgets)
