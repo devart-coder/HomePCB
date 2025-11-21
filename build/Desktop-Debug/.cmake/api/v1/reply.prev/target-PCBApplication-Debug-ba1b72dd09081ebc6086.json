@@ -1,0 +1,265 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/homepcb/libPCBApplication.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"lib/homepcb/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++17 -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 2,
+					"fragment" : "-fPIC"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "QT_CORE_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_GUI_LIB"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "QT_WIDGETS_LIB"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/homepcb"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/shapes/line"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/scene"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/widgets/tools"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/devart/Development/Cpp/HomePCB/lib/viewer"
+				},
+				{
+					"backtrace" : 0,
+					"isSystem" : true,
+					"path" : "/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt6/QtWidgets"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt6"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt6/QtCore"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/lib64/qt6/mkspecs/linux-g++"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "/usr/include/qt6/QtGui"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2,
+					2
+				],
+				"standard" : "17"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "PCBShapes::@1a0fe78ef61522ca39e5"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "PCBCursor::@3db9d0e9d87bf832f207"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "PCBScene::@5b6903297d290a0cfa9b"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "PCBViewer::@49d505f2e2a70ea15fb6"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "PCBWidgets::@878eb542d5f700f77d17"
+		},
+		{
+			"id" : "PCBApplication_autogen_timestamp_deps::@42a297b8345f5505f50c"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PCBApplication_autogen::@42a297b8345f5505f50c"
+		}
+	],
+	"id" : "PCBApplication::@42a297b8345f5505f50c",
+	"name" : "PCBApplication",
+	"nameOnDisk" : "libPCBApplication.a",
+	"paths" : 
+	{
+		"build" : "lib/homepcb",
+		"source" : "lib/homepcb"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				2
+			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
+		},
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				3
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"compileGroupIndex" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/mocs_compilation.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "lib/homepcb/PCBApplication.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "lib/homepcb/PCBApplication.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/timestamp",
+			"sourceGroupIndex" : 2
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/timestamp.rule",
+			"sourceGroupIndex" : 3
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

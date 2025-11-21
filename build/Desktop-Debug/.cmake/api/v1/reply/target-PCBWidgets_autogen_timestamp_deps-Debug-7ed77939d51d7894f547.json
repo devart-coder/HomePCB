@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/widgets/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "PCBShapes::@1a0fe78ef61522ca39e5"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PCBCursor::@3db9d0e9d87bf832f207"
+		}
+	],
+	"id" : "PCBWidgets_autogen_timestamp_deps::@878eb542d5f700f77d17",
+	"isGeneratorProvided" : true,
+	"name" : "PCBWidgets_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/widgets",
+		"source" : "lib/widgets"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

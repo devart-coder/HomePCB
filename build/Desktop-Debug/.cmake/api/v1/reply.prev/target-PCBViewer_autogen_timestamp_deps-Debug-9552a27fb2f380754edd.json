@@ -1,0 +1,27 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/viewer/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "PCBViewer_autogen_timestamp_deps::@49d505f2e2a70ea15fb6",
+	"isGeneratorProvided" : true,
+	"name" : "PCBViewer_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/viewer",
+		"source" : "lib/viewer"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

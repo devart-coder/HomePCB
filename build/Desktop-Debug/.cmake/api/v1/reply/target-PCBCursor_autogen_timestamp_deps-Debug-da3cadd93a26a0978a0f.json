@@ -1,0 +1,27 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/graphicsviews/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "PCBCursor_autogen_timestamp_deps::@3db9d0e9d87bf832f207",
+	"isGeneratorProvided" : true,
+	"name" : "PCBCursor_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/graphicsviews",
+		"source" : "lib/graphicsviews"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,38 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/scene/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "PCBShapes::@1a0fe78ef61522ca39e5"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PCBCursor::@3db9d0e9d87bf832f207"
+		}
+	],
+	"id" : "PCBScene_autogen_timestamp_deps::@5b6903297d290a0cfa9b",
+	"isGeneratorProvided" : true,
+	"name" : "PCBScene_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/scene",
+		"source" : "lib/scene"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

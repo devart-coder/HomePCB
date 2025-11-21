@@ -47,14 +47,14 @@ cmake_ninja_workdir = /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/
 #############################################
 # Order-only phony target for HomePCB
 
-build cmake_object_order_depends_target_HomePCB: phony || HomePCB_autogen HomePCB_autogen/mocs_compilation.cpp HomePCB_autogen/timestamp HomePCB_autogen_timestamp_deps
+build cmake_object_order_depends_target_HomePCB: phony || HomePCB_autogen HomePCB_autogen/mocs_compilation.cpp HomePCB_autogen/timestamp HomePCB_autogen_timestamp_deps cmake_object_order_depends_target_PCBApplication cmake_object_order_depends_target_PCBCursor cmake_object_order_depends_target_PCBScene cmake_object_order_depends_target_PCBShapes cmake_object_order_depends_target_PCBViewer cmake_object_order_depends_target_PCBWidgets
 
 build CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_HomePCB
   CONFIG = Debug
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/homepcb -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -I/home/devart/Development/Cpp/HomePCB/lib/scene -I/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode -I/home/devart/Development/Cpp/HomePCB/lib/widgets/tools -I/home/devart/Development/Cpp/HomePCB/lib/viewer -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/HomePCB_autogen
 
@@ -63,90 +63,9 @@ build CMakeFiles/HomePCB.dir/main.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /
   DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
   DEP_FILE = CMakeFiles/HomePCB.dir/main.cpp.o.d
   FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/homepcb -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -I/home/devart/Development/Cpp/HomePCB/lib/scene -I/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode -I/home/devart/Development/Cpp/HomePCB/lib/widgets/tools -I/home/devart/Development/Cpp/HomePCB/lib/viewer -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir
-
-build CMakeFiles/HomePCB.dir/src/gcodewidget.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/gcodewidget.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/gcodewidget.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
-
-build CMakeFiles/HomePCB.dir/src/graphicsviewer.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/graphicsviewer.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/graphicsviewer.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
-
-build CMakeFiles/HomePCB.dir/src/homepcbmain.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/homepcbmain.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/homepcbmain.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
-
-build CMakeFiles/HomePCB.dir/src/shapes/linepcb.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/shapes/linepcb.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/shapes/linepcb.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/shapes
-
-build CMakeFiles/HomePCB.dir/src/shapes/settings/linepcbpropertydialog.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/shapes/settings/linepcbpropertydialog.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/shapes/settings/linepcbpropertydialog.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/shapes/settings
-
-build CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/scenepcb.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src
-
-build CMakeFiles/HomePCB.dir/src/cursor/SpotF.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/cursor/SpotF.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/cursor
-
-build CMakeFiles/HomePCB.dir/src/cursor/Cursor.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/cursor/Cursor.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/cursor/Cursor.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/cursor
-
-build CMakeFiles/HomePCB.dir/src/tools/CursorToolbar.cpp.o: CXX_COMPILER__HomePCB_unscanned_Debug /home/devart/Development/Cpp/HomePCB/src/tools/CursorToolbar.cpp || cmake_object_order_depends_target_HomePCB
-  CONFIG = Debug
-  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
-  DEP_FILE = CMakeFiles/HomePCB.dir/src/tools/CursorToolbar.cpp.o.d
-  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
-  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/src/cursor -I/home/devart/Development/Cpp/HomePCB/src/tools -I/home/devart/Development/Cpp/HomePCB/src -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include -isystem /usr/include/qt6/QtCore -isystem /usr/include/qt6 -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6/QtGui
-  OBJECT_DIR = CMakeFiles/HomePCB.dir
-  OBJECT_FILE_DIR = CMakeFiles/HomePCB.dir/src/tools
 
 
 # =============================================================================
@@ -156,12 +75,12 @@ build CMakeFiles/HomePCB.dir/src/tools/CursorToolbar.cpp.o: CXX_COMPILER__HomePC
 #############################################
 # Link the executable HomePCB
 
-build HomePCB: CXX_EXECUTABLE_LINKER__HomePCB_Debug CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o CMakeFiles/HomePCB.dir/main.cpp.o CMakeFiles/HomePCB.dir/src/gcodewidget.cpp.o CMakeFiles/HomePCB.dir/src/graphicsviewer.cpp.o CMakeFiles/HomePCB.dir/src/homepcbmain.cpp.o CMakeFiles/HomePCB.dir/src/shapes/linepcb.cpp.o CMakeFiles/HomePCB.dir/src/shapes/settings/linepcbpropertydialog.cpp.o CMakeFiles/HomePCB.dir/src/scenepcb.cpp.o CMakeFiles/HomePCB.dir/src/cursor/SpotF.cpp.o CMakeFiles/HomePCB.dir/src/cursor/Cursor.cpp.o CMakeFiles/HomePCB.dir/src/tools/CursorToolbar.cpp.o | /usr/lib/libQt6Widgets.so.6.10.0 /usr/lib/libQt6Gui.so.6.10.0 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.10.0 || HomePCB_autogen HomePCB_autogen_timestamp_deps
+build HomePCB: CXX_EXECUTABLE_LINKER__HomePCB_Debug CMakeFiles/HomePCB.dir/HomePCB_autogen/mocs_compilation.cpp.o CMakeFiles/HomePCB.dir/main.cpp.o | lib/graphicsviews/libPCBCursor.a lib/homepcb/libPCBApplication.a lib/scene/libPCBScene.a lib/shapes/libPCBShapes.a lib/viewer/libPCBViewer.a lib/widgets/libPCBWidgets.a lib/graphicsviews/libPCBCursor.a lib/shapes/libPCBShapes.a /usr/lib/libQt6Widgets.so.6.10.0 /usr/lib/libQt6Gui.so.6.10.0 /usr/lib/libGLX.so /usr/lib/libOpenGL.so /usr/lib/libQt6Core.so.6.10.0 || HomePCB_autogen HomePCB_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/homepcb/libPCBApplication.a lib/scene/libPCBScene.a lib/shapes/libPCBShapes.a lib/viewer/libPCBViewer.a lib/widgets/libPCBWidgets.a
   CONFIG = Debug
   DEP_FILE = CMakeFiles/HomePCB.dir/link.d
   FLAGS = -g
   LINK_FLAGS = -Wl,--dependency-file=CMakeFiles/HomePCB.dir/link.d
-  LINK_LIBRARIES = /usr/lib/libQt6Widgets.so.6.10.0  /usr/lib/libQt6Gui.so.6.10.0  /usr/lib/libGLX.so  /usr/lib/libOpenGL.so  /usr/lib/libQt6Core.so.6.10.0
+  LINK_LIBRARIES = lib/graphicsviews/libPCBCursor.a  lib/homepcb/libPCBApplication.a  lib/scene/libPCBScene.a  lib/shapes/libPCBShapes.a  lib/viewer/libPCBViewer.a  lib/widgets/libPCBWidgets.a  lib/graphicsviews/libPCBCursor.a  lib/shapes/libPCBShapes.a  /usr/lib/libQt6Widgets.so.6.10.0  /usr/lib/libQt6Gui.so.6.10.0  /usr/lib/libGLX.so  /usr/lib/libOpenGL.so  /usr/lib/libQt6Core.so.6.10.0
   OBJECT_DIR = CMakeFiles/HomePCB.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -194,51 +113,9 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 
 #############################################
-# Utility command for list_install_components
-
-build list_install_components: phony
-
-
-#############################################
-# Utility command for install
-
-build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug && /usr/bin/cmake -P cmake_install.cmake
-  DESC = Install the project...
-  pool = console
-  restat = 1
-
-build install: phony CMakeFiles/install.util
-
-
-#############################################
-# Utility command for install/local
-
-build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug && /usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-  DESC = Installing only the local directory...
-  pool = console
-  restat = 1
-
-build install/local: phony CMakeFiles/install/local.util
-
-
-#############################################
-# Utility command for install/strip
-
-build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug && /usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-  DESC = Installing the project stripped...
-  pool = console
-  restat = 1
-
-build install/strip: phony CMakeFiles/install/strip.util
-
-
-#############################################
 # Utility command for HomePCB_autogen_timestamp_deps
 
-build HomePCB_autogen_timestamp_deps: phony
+build HomePCB_autogen_timestamp_deps: phony lib/graphicsviews/libPCBCursor.a lib/homepcb/libPCBApplication.a lib/scene/libPCBScene.a lib/shapes/libPCBShapes.a lib/viewer/libPCBViewer.a lib/widgets/libPCBWidgets.a
 
 
 #############################################
@@ -250,7 +127,7 @@ build HomePCB_autogen: phony CMakeFiles/HomePCB_autogen HomePCB_autogen/timestam
 #############################################
 # Custom command for HomePCB_autogen/timestamp
 
-build HomePCB_autogen/timestamp HomePCB_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}HomePCB_autogen/timestamp ${cmake_ninja_workdir}HomePCB_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || HomePCB_autogen_timestamp_deps
+build HomePCB_autogen/timestamp HomePCB_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}HomePCB_autogen/timestamp ${cmake_ninja_workdir}HomePCB_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || HomePCB_autogen_timestamp_deps lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/homepcb/PCBApplication_autogen lib/homepcb/PCBApplication_autogen_timestamp_deps lib/homepcb/libPCBApplication.a lib/scene/PCBScene_autogen lib/scene/PCBScene_autogen_timestamp_deps lib/scene/libPCBScene.a lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a lib/viewer/PCBViewer_autogen lib/viewer/PCBViewer_autogen_timestamp_deps lib/viewer/libPCBViewer.a lib/widgets/PCBWidgets_autogen lib/widgets/PCBWidgets_autogen_timestamp_deps lib/widgets/libPCBWidgets.a
   COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug && /usr/bin/cmake -E cmake_autogen /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/HomePCB_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/deps /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/d/83694b60a4122d9e3b0ea1c225a64dc19848e4f7f084cf59c2e745c72922091f.d
   DESC = Automatic MOC and UIC for target HomePCB
   depfile = CMakeFiles/d/83694b60a4122d9e3b0ea1c225a64dc19848e4f7f084cf59c2e745c72922091f.d
@@ -261,10 +138,726 @@ build HomePCB_autogen/timestamp HomePCB_autogen/mocs_compilation.cpp | ${cmake_n
 #############################################
 # Phony custom command for CMakeFiles/HomePCB_autogen
 
-build CMakeFiles/HomePCB_autogen | ${cmake_ninja_workdir}CMakeFiles/HomePCB_autogen: phony HomePCB_autogen/timestamp || HomePCB_autogen_timestamp_deps
+build CMakeFiles/HomePCB_autogen | ${cmake_ninja_workdir}CMakeFiles/HomePCB_autogen: phony HomePCB_autogen/timestamp || HomePCB_autogen_timestamp_deps lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/homepcb/PCBApplication_autogen lib/homepcb/PCBApplication_autogen_timestamp_deps lib/homepcb/libPCBApplication.a lib/scene/PCBScene_autogen lib/scene/PCBScene_autogen_timestamp_deps lib/scene/libPCBScene.a lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a lib/viewer/PCBViewer_autogen lib/viewer/PCBViewer_autogen_timestamp_deps lib/viewer/libPCBViewer.a lib/widgets/PCBWidgets_autogen lib/widgets/PCBWidgets_autogen_timestamp_deps lib/widgets/libPCBWidgets.a
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/devart/Development/Cpp/HomePCB/CMakeLists.txt
+# =============================================================================
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib && /usr/bin/ccmake -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/edit_cache: phony lib/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib && /usr/bin/cmake --regenerate-during-build -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/rebuild_cache: phony lib/CMakeFiles/rebuild_cache.util
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target PCBShapes
+
+
+#############################################
+# Order-only phony target for PCBShapes
+
+build cmake_object_order_depends_target_PCBShapes: phony || lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen/mocs_compilation.cpp lib/shapes/PCBShapes_autogen/timestamp lib/shapes/PCBShapes_autogen_timestamp_deps
+
+build lib/shapes/CMakeFiles/PCBShapes.dir/PCBShapes_autogen/mocs_compilation.cpp.o: CXX_COMPILER__PCBShapes_unscanned_Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/PCBShapes_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_PCBShapes
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/shapes/CMakeFiles/PCBShapes.dir/PCBShapes_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/PCBShapes_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/shapes/CMakeFiles/PCBShapes.dir
+  OBJECT_FILE_DIR = lib/shapes/CMakeFiles/PCBShapes.dir/PCBShapes_autogen
+
+build lib/shapes/CMakeFiles/PCBShapes.dir/line/PCBLine.cpp.o: CXX_COMPILER__PCBShapes_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/shapes/line/PCBLine.cpp || cmake_object_order_depends_target_PCBShapes
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/shapes/CMakeFiles/PCBShapes.dir/line/PCBLine.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/PCBShapes_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/shapes/CMakeFiles/PCBShapes.dir
+  OBJECT_FILE_DIR = lib/shapes/CMakeFiles/PCBShapes.dir/line
+
+build lib/shapes/CMakeFiles/PCBShapes.dir/line/settings/PCBLineSettings.cpp.o: CXX_COMPILER__PCBShapes_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings/PCBLineSettings.cpp || cmake_object_order_depends_target_PCBShapes
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/shapes/CMakeFiles/PCBShapes.dir/line/settings/PCBLineSettings.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/PCBShapes_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/shapes/CMakeFiles/PCBShapes.dir
+  OBJECT_FILE_DIR = lib/shapes/CMakeFiles/PCBShapes.dir/line/settings
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target PCBShapes
+
+
+#############################################
+# Link the static library lib/shapes/libPCBShapes.a
+
+build lib/shapes/libPCBShapes.a: CXX_STATIC_LIBRARY_LINKER__PCBShapes_Debug lib/shapes/CMakeFiles/PCBShapes.dir/PCBShapes_autogen/mocs_compilation.cpp.o lib/shapes/CMakeFiles/PCBShapes.dir/line/PCBLine.cpp.o lib/shapes/CMakeFiles/PCBShapes.dir/line/settings/PCBLineSettings.cpp.o || lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/shapes/CMakeFiles/PCBShapes.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/shapes/libPCBShapes.a
+  TARGET_PDB = PCBShapes.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/shapes/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes && /usr/bin/ccmake -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/shapes/edit_cache: phony lib/shapes/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/shapes/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes && /usr/bin/cmake --regenerate-during-build -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/shapes/rebuild_cache: phony lib/shapes/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for PCBShapes_autogen_timestamp_deps
+
+build lib/shapes/PCBShapes_autogen_timestamp_deps: phony
+
+
+#############################################
+# Utility command for PCBShapes_autogen
+
+build lib/shapes/PCBShapes_autogen: phony lib/shapes/CMakeFiles/PCBShapes_autogen lib/shapes/PCBShapes_autogen/timestamp lib/shapes/PCBShapes_autogen/mocs_compilation.cpp lib/shapes/PCBShapes_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for lib/shapes/PCBShapes_autogen/timestamp
+
+build lib/shapes/PCBShapes_autogen/timestamp lib/shapes/PCBShapes_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}lib/shapes/PCBShapes_autogen/timestamp ${cmake_ninja_workdir}lib/shapes/PCBShapes_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || lib/shapes/PCBShapes_autogen_timestamp_deps
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes && /usr/bin/cmake -E cmake_autogen /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/CMakeFiles/PCBShapes_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/PCBShapes_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB/lib/shapes /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/PCBShapes_autogen/deps /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/d/b7a9f9cd1021def5f456c8cc9b1c7d6e1424bd2953390c0c5395d5f7a2209b9e.d
+  DESC = Automatic MOC and UIC for target PCBShapes
+  depfile = CMakeFiles/d/b7a9f9cd1021def5f456c8cc9b1c7d6e1424bd2953390c0c5395d5f7a2209b9e.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for lib/shapes/CMakeFiles/PCBShapes_autogen
+
+build lib/shapes/CMakeFiles/PCBShapes_autogen | ${cmake_ninja_workdir}lib/shapes/CMakeFiles/PCBShapes_autogen: phony lib/shapes/PCBShapes_autogen/timestamp || lib/shapes/PCBShapes_autogen_timestamp_deps
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target PCBCursor
+
+
+#############################################
+# Order-only phony target for PCBCursor
+
+build cmake_object_order_depends_target_PCBCursor: phony || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen/mocs_compilation.cpp lib/graphicsviews/PCBCursor_autogen/timestamp lib/graphicsviews/PCBCursor_autogen_timestamp_deps
+
+build lib/graphicsviews/CMakeFiles/PCBCursor.dir/PCBCursor_autogen/mocs_compilation.cpp.o: CXX_COMPILER__PCBCursor_unscanned_Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/PCBCursor_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_PCBCursor
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/graphicsviews/CMakeFiles/PCBCursor.dir/PCBCursor_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/PCBCursor_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/graphicsviews/CMakeFiles/PCBCursor.dir
+  OBJECT_FILE_DIR = lib/graphicsviews/CMakeFiles/PCBCursor.dir/PCBCursor_autogen
+
+build lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor/PCBCursor.cpp.o: CXX_COMPILER__PCBCursor_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor/PCBCursor.cpp || cmake_object_order_depends_target_PCBCursor
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor/PCBCursor.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/PCBCursor_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/graphicsviews/CMakeFiles/PCBCursor.dir
+  OBJECT_FILE_DIR = lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor
+
+build lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor/PCBSpotF.cpp.o: CXX_COMPILER__PCBCursor_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor/PCBSpotF.cpp || cmake_object_order_depends_target_PCBCursor
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor/PCBSpotF.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/PCBCursor_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/graphicsviews/CMakeFiles/PCBCursor.dir
+  OBJECT_FILE_DIR = lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target PCBCursor
+
+
+#############################################
+# Link the static library lib/graphicsviews/libPCBCursor.a
+
+build lib/graphicsviews/libPCBCursor.a: CXX_STATIC_LIBRARY_LINKER__PCBCursor_Debug lib/graphicsviews/CMakeFiles/PCBCursor.dir/PCBCursor_autogen/mocs_compilation.cpp.o lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor/PCBCursor.cpp.o lib/graphicsviews/CMakeFiles/PCBCursor.dir/cursor/PCBSpotF.cpp.o || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/graphicsviews/CMakeFiles/PCBCursor.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/graphicsviews/libPCBCursor.a
+  TARGET_PDB = PCBCursor.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/graphicsviews/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews && /usr/bin/ccmake -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/graphicsviews/edit_cache: phony lib/graphicsviews/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/graphicsviews/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews && /usr/bin/cmake --regenerate-during-build -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/graphicsviews/rebuild_cache: phony lib/graphicsviews/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for PCBCursor_autogen_timestamp_deps
+
+build lib/graphicsviews/PCBCursor_autogen_timestamp_deps: phony
+
+
+#############################################
+# Utility command for PCBCursor_autogen
+
+build lib/graphicsviews/PCBCursor_autogen: phony lib/graphicsviews/CMakeFiles/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen/timestamp lib/graphicsviews/PCBCursor_autogen/mocs_compilation.cpp lib/graphicsviews/PCBCursor_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for lib/graphicsviews/PCBCursor_autogen/timestamp
+
+build lib/graphicsviews/PCBCursor_autogen/timestamp lib/graphicsviews/PCBCursor_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}lib/graphicsviews/PCBCursor_autogen/timestamp ${cmake_ninja_workdir}lib/graphicsviews/PCBCursor_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || lib/graphicsviews/PCBCursor_autogen_timestamp_deps
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews && /usr/bin/cmake -E cmake_autogen /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/CMakeFiles/PCBCursor_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/PCBCursor_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB/lib/graphicsviews /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/PCBCursor_autogen/deps /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/d/4e269e31496c4a9b8aa04ce4251d9e823ca8428e3f6725bc444c6935cb150d0b.d
+  DESC = Automatic MOC and UIC for target PCBCursor
+  depfile = CMakeFiles/d/4e269e31496c4a9b8aa04ce4251d9e823ca8428e3f6725bc444c6935cb150d0b.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for lib/graphicsviews/CMakeFiles/PCBCursor_autogen
+
+build lib/graphicsviews/CMakeFiles/PCBCursor_autogen | ${cmake_ninja_workdir}lib/graphicsviews/CMakeFiles/PCBCursor_autogen: phony lib/graphicsviews/PCBCursor_autogen/timestamp || lib/graphicsviews/PCBCursor_autogen_timestamp_deps
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target PCBApplication
+
+
+#############################################
+# Order-only phony target for PCBApplication
+
+build cmake_object_order_depends_target_PCBApplication: phony || cmake_object_order_depends_target_PCBCursor cmake_object_order_depends_target_PCBScene cmake_object_order_depends_target_PCBShapes cmake_object_order_depends_target_PCBViewer cmake_object_order_depends_target_PCBWidgets lib/homepcb/PCBApplication_autogen lib/homepcb/PCBApplication_autogen/mocs_compilation.cpp lib/homepcb/PCBApplication_autogen/timestamp lib/homepcb/PCBApplication_autogen_timestamp_deps
+
+build lib/homepcb/CMakeFiles/PCBApplication.dir/PCBApplication_autogen/mocs_compilation.cpp.o: CXX_COMPILER__PCBApplication_unscanned_Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_PCBApplication
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/homepcb/CMakeFiles/PCBApplication.dir/PCBApplication_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/homepcb -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -I/home/devart/Development/Cpp/HomePCB/lib/scene -I/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode -I/home/devart/Development/Cpp/HomePCB/lib/widgets/tools -I/home/devart/Development/Cpp/HomePCB/lib/viewer -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/homepcb/CMakeFiles/PCBApplication.dir
+  OBJECT_FILE_DIR = lib/homepcb/CMakeFiles/PCBApplication.dir/PCBApplication_autogen
+
+build lib/homepcb/CMakeFiles/PCBApplication.dir/PCBApplication.cpp.o: CXX_COMPILER__PCBApplication_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/homepcb/PCBApplication.cpp || cmake_object_order_depends_target_PCBApplication
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/homepcb/CMakeFiles/PCBApplication.dir/PCBApplication.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/homepcb -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -I/home/devart/Development/Cpp/HomePCB/lib/scene -I/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode -I/home/devart/Development/Cpp/HomePCB/lib/widgets/tools -I/home/devart/Development/Cpp/HomePCB/lib/viewer -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/homepcb/CMakeFiles/PCBApplication.dir
+  OBJECT_FILE_DIR = lib/homepcb/CMakeFiles/PCBApplication.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target PCBApplication
+
+
+#############################################
+# Link the static library lib/homepcb/libPCBApplication.a
+
+build lib/homepcb/libPCBApplication.a: CXX_STATIC_LIBRARY_LINKER__PCBApplication_Debug lib/homepcb/CMakeFiles/PCBApplication.dir/PCBApplication_autogen/mocs_compilation.cpp.o lib/homepcb/CMakeFiles/PCBApplication.dir/PCBApplication.cpp.o || lib/graphicsviews/libPCBCursor.a lib/homepcb/PCBApplication_autogen lib/homepcb/PCBApplication_autogen_timestamp_deps lib/scene/libPCBScene.a lib/shapes/libPCBShapes.a lib/viewer/libPCBViewer.a lib/widgets/libPCBWidgets.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/homepcb/CMakeFiles/PCBApplication.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/homepcb/libPCBApplication.a
+  TARGET_PDB = PCBApplication.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/homepcb/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb && /usr/bin/ccmake -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/homepcb/edit_cache: phony lib/homepcb/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/homepcb/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb && /usr/bin/cmake --regenerate-during-build -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/homepcb/rebuild_cache: phony lib/homepcb/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for PCBApplication_autogen_timestamp_deps
+
+build lib/homepcb/PCBApplication_autogen_timestamp_deps: phony lib/graphicsviews/libPCBCursor.a lib/scene/libPCBScene.a lib/shapes/libPCBShapes.a lib/viewer/libPCBViewer.a lib/widgets/libPCBWidgets.a
+
+
+#############################################
+# Utility command for PCBApplication_autogen
+
+build lib/homepcb/PCBApplication_autogen: phony lib/homepcb/CMakeFiles/PCBApplication_autogen lib/homepcb/PCBApplication_autogen/timestamp lib/homepcb/PCBApplication_autogen/mocs_compilation.cpp lib/homepcb/PCBApplication_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for lib/homepcb/PCBApplication_autogen/timestamp
+
+build lib/homepcb/PCBApplication_autogen/timestamp lib/homepcb/PCBApplication_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}lib/homepcb/PCBApplication_autogen/timestamp ${cmake_ninja_workdir}lib/homepcb/PCBApplication_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/homepcb/PCBApplication_autogen_timestamp_deps lib/scene/PCBScene_autogen lib/scene/PCBScene_autogen_timestamp_deps lib/scene/libPCBScene.a lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a lib/viewer/PCBViewer_autogen lib/viewer/PCBViewer_autogen_timestamp_deps lib/viewer/libPCBViewer.a lib/widgets/PCBWidgets_autogen lib/widgets/PCBWidgets_autogen_timestamp_deps lib/widgets/libPCBWidgets.a
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb && /usr/bin/cmake -E cmake_autogen /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/CMakeFiles/PCBApplication_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB/lib/homepcb /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/PCBApplication_autogen/deps /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/d/e5844d193df33dd9ed295744624273d690f87182bbfdf8ac38e49ec7ea5d8faa.d
+  DESC = Automatic MOC and UIC for target PCBApplication
+  depfile = CMakeFiles/d/e5844d193df33dd9ed295744624273d690f87182bbfdf8ac38e49ec7ea5d8faa.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for lib/homepcb/CMakeFiles/PCBApplication_autogen
+
+build lib/homepcb/CMakeFiles/PCBApplication_autogen | ${cmake_ninja_workdir}lib/homepcb/CMakeFiles/PCBApplication_autogen: phony lib/homepcb/PCBApplication_autogen/timestamp || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/homepcb/PCBApplication_autogen_timestamp_deps lib/scene/PCBScene_autogen lib/scene/PCBScene_autogen_timestamp_deps lib/scene/libPCBScene.a lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a lib/viewer/PCBViewer_autogen lib/viewer/PCBViewer_autogen_timestamp_deps lib/viewer/libPCBViewer.a lib/widgets/PCBWidgets_autogen lib/widgets/PCBWidgets_autogen_timestamp_deps lib/widgets/libPCBWidgets.a
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target PCBScene
+
+
+#############################################
+# Order-only phony target for PCBScene
+
+build cmake_object_order_depends_target_PCBScene: phony || cmake_object_order_depends_target_PCBCursor cmake_object_order_depends_target_PCBShapes lib/scene/PCBScene_autogen lib/scene/PCBScene_autogen/mocs_compilation.cpp lib/scene/PCBScene_autogen/timestamp lib/scene/PCBScene_autogen_timestamp_deps
+
+build lib/scene/CMakeFiles/PCBScene.dir/PCBScene_autogen/mocs_compilation.cpp.o: CXX_COMPILER__PCBScene_unscanned_Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/PCBScene_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_PCBScene
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/scene/CMakeFiles/PCBScene.dir/PCBScene_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/scene -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/PCBScene_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/scene/CMakeFiles/PCBScene.dir
+  OBJECT_FILE_DIR = lib/scene/CMakeFiles/PCBScene.dir/PCBScene_autogen
+
+build lib/scene/CMakeFiles/PCBScene.dir/PCBScene.cpp.o: CXX_COMPILER__PCBScene_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/scene/PCBScene.cpp || cmake_object_order_depends_target_PCBScene
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/scene/CMakeFiles/PCBScene.dir/PCBScene.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/scene -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/PCBScene_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/scene/CMakeFiles/PCBScene.dir
+  OBJECT_FILE_DIR = lib/scene/CMakeFiles/PCBScene.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target PCBScene
+
+
+#############################################
+# Link the static library lib/scene/libPCBScene.a
+
+build lib/scene/libPCBScene.a: CXX_STATIC_LIBRARY_LINKER__PCBScene_Debug lib/scene/CMakeFiles/PCBScene.dir/PCBScene_autogen/mocs_compilation.cpp.o lib/scene/CMakeFiles/PCBScene.dir/PCBScene.cpp.o || lib/graphicsviews/libPCBCursor.a lib/scene/PCBScene_autogen lib/scene/PCBScene_autogen_timestamp_deps lib/shapes/libPCBShapes.a
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/scene/CMakeFiles/PCBScene.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/scene/libPCBScene.a
+  TARGET_PDB = PCBScene.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/scene/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene && /usr/bin/ccmake -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/scene/edit_cache: phony lib/scene/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/scene/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene && /usr/bin/cmake --regenerate-during-build -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/scene/rebuild_cache: phony lib/scene/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for PCBScene_autogen_timestamp_deps
+
+build lib/scene/PCBScene_autogen_timestamp_deps: phony lib/graphicsviews/libPCBCursor.a lib/shapes/libPCBShapes.a
+
+
+#############################################
+# Utility command for PCBScene_autogen
+
+build lib/scene/PCBScene_autogen: phony lib/scene/CMakeFiles/PCBScene_autogen lib/scene/PCBScene_autogen/timestamp lib/scene/PCBScene_autogen/mocs_compilation.cpp lib/scene/PCBScene_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for lib/scene/PCBScene_autogen/timestamp
+
+build lib/scene/PCBScene_autogen/timestamp lib/scene/PCBScene_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}lib/scene/PCBScene_autogen/timestamp ${cmake_ninja_workdir}lib/scene/PCBScene_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/scene/PCBScene_autogen_timestamp_deps lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene && /usr/bin/cmake -E cmake_autogen /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/CMakeFiles/PCBScene_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/PCBScene_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB/lib/scene /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/PCBScene_autogen/deps /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/d/0412e9b24c8876544fea068406e33c5bcd66519015ba534aa6db76da0a195a3f.d
+  DESC = Automatic MOC and UIC for target PCBScene
+  depfile = CMakeFiles/d/0412e9b24c8876544fea068406e33c5bcd66519015ba534aa6db76da0a195a3f.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for lib/scene/CMakeFiles/PCBScene_autogen
+
+build lib/scene/CMakeFiles/PCBScene_autogen | ${cmake_ninja_workdir}lib/scene/CMakeFiles/PCBScene_autogen: phony lib/scene/PCBScene_autogen/timestamp || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/scene/PCBScene_autogen_timestamp_deps lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target PCBViewer
+
+
+#############################################
+# Order-only phony target for PCBViewer
+
+build cmake_object_order_depends_target_PCBViewer: phony || lib/viewer/PCBViewer_autogen lib/viewer/PCBViewer_autogen/mocs_compilation.cpp lib/viewer/PCBViewer_autogen/timestamp lib/viewer/PCBViewer_autogen_timestamp_deps
+
+build lib/viewer/CMakeFiles/PCBViewer.dir/PCBViewer_autogen/mocs_compilation.cpp.o: CXX_COMPILER__PCBViewer_unscanned_Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/PCBViewer_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_PCBViewer
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/viewer/CMakeFiles/PCBViewer.dir/PCBViewer_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/viewer -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/PCBViewer_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/viewer/CMakeFiles/PCBViewer.dir
+  OBJECT_FILE_DIR = lib/viewer/CMakeFiles/PCBViewer.dir/PCBViewer_autogen
+
+build lib/viewer/CMakeFiles/PCBViewer.dir/PCBGraphicsViewer.cpp.o: CXX_COMPILER__PCBViewer_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/viewer/PCBGraphicsViewer.cpp || cmake_object_order_depends_target_PCBViewer
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/viewer/CMakeFiles/PCBViewer.dir/PCBGraphicsViewer.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/viewer -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/PCBViewer_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/viewer/CMakeFiles/PCBViewer.dir
+  OBJECT_FILE_DIR = lib/viewer/CMakeFiles/PCBViewer.dir
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target PCBViewer
+
+
+#############################################
+# Link the static library lib/viewer/libPCBViewer.a
+
+build lib/viewer/libPCBViewer.a: CXX_STATIC_LIBRARY_LINKER__PCBViewer_Debug lib/viewer/CMakeFiles/PCBViewer.dir/PCBViewer_autogen/mocs_compilation.cpp.o lib/viewer/CMakeFiles/PCBViewer.dir/PCBGraphicsViewer.cpp.o || lib/viewer/PCBViewer_autogen lib/viewer/PCBViewer_autogen_timestamp_deps
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/viewer/CMakeFiles/PCBViewer.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/viewer/libPCBViewer.a
+  TARGET_PDB = PCBViewer.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/viewer/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer && /usr/bin/ccmake -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/viewer/edit_cache: phony lib/viewer/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/viewer/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer && /usr/bin/cmake --regenerate-during-build -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/viewer/rebuild_cache: phony lib/viewer/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for PCBViewer_autogen_timestamp_deps
+
+build lib/viewer/PCBViewer_autogen_timestamp_deps: phony
+
+
+#############################################
+# Utility command for PCBViewer_autogen
+
+build lib/viewer/PCBViewer_autogen: phony lib/viewer/CMakeFiles/PCBViewer_autogen lib/viewer/PCBViewer_autogen/timestamp lib/viewer/PCBViewer_autogen/mocs_compilation.cpp lib/viewer/PCBViewer_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for lib/viewer/PCBViewer_autogen/timestamp
+
+build lib/viewer/PCBViewer_autogen/timestamp lib/viewer/PCBViewer_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}lib/viewer/PCBViewer_autogen/timestamp ${cmake_ninja_workdir}lib/viewer/PCBViewer_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || lib/viewer/PCBViewer_autogen_timestamp_deps
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer && /usr/bin/cmake -E cmake_autogen /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/CMakeFiles/PCBViewer_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/PCBViewer_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB/lib/viewer /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/PCBViewer_autogen/deps /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/d/fbd4a5c95a9f8d4bcc5c9b8631ddba64a1692194f78405d6e810250d5700c309.d
+  DESC = Automatic MOC and UIC for target PCBViewer
+  depfile = CMakeFiles/d/fbd4a5c95a9f8d4bcc5c9b8631ddba64a1692194f78405d6e810250d5700c309.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for lib/viewer/CMakeFiles/PCBViewer_autogen
+
+build lib/viewer/CMakeFiles/PCBViewer_autogen | ${cmake_ninja_workdir}lib/viewer/CMakeFiles/PCBViewer_autogen: phony lib/viewer/PCBViewer_autogen/timestamp || lib/viewer/PCBViewer_autogen_timestamp_deps
+
+# =============================================================================
+# Write statements declared in CMakeLists.txt:
+# /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt
+# =============================================================================
+
+# =============================================================================
+# Object build statements for STATIC_LIBRARY target PCBWidgets
+
+
+#############################################
+# Order-only phony target for PCBWidgets
+
+build cmake_object_order_depends_target_PCBWidgets: phony || cmake_object_order_depends_target_PCBCursor cmake_object_order_depends_target_PCBShapes lib/widgets/PCBWidgets_autogen lib/widgets/PCBWidgets_autogen/mocs_compilation.cpp lib/widgets/PCBWidgets_autogen/timestamp lib/widgets/PCBWidgets_autogen_timestamp_deps
+
+build lib/widgets/CMakeFiles/PCBWidgets.dir/PCBWidgets_autogen/mocs_compilation.cpp.o: CXX_COMPILER__PCBWidgets_unscanned_Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/PCBWidgets_autogen/mocs_compilation.cpp || cmake_object_order_depends_target_PCBWidgets
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/widgets/CMakeFiles/PCBWidgets.dir/PCBWidgets_autogen/mocs_compilation.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode -I/home/devart/Development/Cpp/HomePCB/lib/widgets/tools -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/PCBWidgets_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/widgets/CMakeFiles/PCBWidgets.dir
+  OBJECT_FILE_DIR = lib/widgets/CMakeFiles/PCBWidgets.dir/PCBWidgets_autogen
+
+build lib/widgets/CMakeFiles/PCBWidgets.dir/gcode/PCBGCodeWidget.cpp.o: CXX_COMPILER__PCBWidgets_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/widgets/gcode/PCBGCodeWidget.cpp || cmake_object_order_depends_target_PCBWidgets
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/widgets/CMakeFiles/PCBWidgets.dir/gcode/PCBGCodeWidget.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode -I/home/devart/Development/Cpp/HomePCB/lib/widgets/tools -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/PCBWidgets_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/widgets/CMakeFiles/PCBWidgets.dir
+  OBJECT_FILE_DIR = lib/widgets/CMakeFiles/PCBWidgets.dir/gcode
+
+build lib/widgets/CMakeFiles/PCBWidgets.dir/tools/PCBCursorToolbar.cpp.o: CXX_COMPILER__PCBWidgets_unscanned_Debug /home/devart/Development/Cpp/HomePCB/lib/widgets/tools/PCBCursorToolbar.cpp || cmake_object_order_depends_target_PCBWidgets
+  CONFIG = Debug
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = lib/widgets/CMakeFiles/PCBWidgets.dir/tools/PCBCursorToolbar.cpp.o.d
+  FLAGS = -g -std=gnu++17 -fdiagnostics-color=always -fPIC
+  INCLUDES = -I/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode -I/home/devart/Development/Cpp/HomePCB/lib/widgets/tools -I/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor -I/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line -I/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings -isystem /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/PCBWidgets_autogen/include -isystem /usr/include/qt6/QtWidgets -isystem /usr/include/qt6 -isystem /usr/include/qt6/QtCore -isystem /usr/lib64/qt6/mkspecs/linux-g++ -isystem /usr/include/qt6/QtGui
+  OBJECT_DIR = lib/widgets/CMakeFiles/PCBWidgets.dir
+  OBJECT_FILE_DIR = lib/widgets/CMakeFiles/PCBWidgets.dir/tools
+
+
+# =============================================================================
+# Link build statements for STATIC_LIBRARY target PCBWidgets
+
+
+#############################################
+# Link the static library lib/widgets/libPCBWidgets.a
+
+build lib/widgets/libPCBWidgets.a: CXX_STATIC_LIBRARY_LINKER__PCBWidgets_Debug lib/widgets/CMakeFiles/PCBWidgets.dir/PCBWidgets_autogen/mocs_compilation.cpp.o lib/widgets/CMakeFiles/PCBWidgets.dir/gcode/PCBGCodeWidget.cpp.o lib/widgets/CMakeFiles/PCBWidgets.dir/tools/PCBCursorToolbar.cpp.o || lib/graphicsviews/libPCBCursor.a lib/shapes/libPCBShapes.a lib/widgets/PCBWidgets_autogen lib/widgets/PCBWidgets_autogen_timestamp_deps
+  CONFIG = Debug
+  LANGUAGE_COMPILE_FLAGS = -g
+  OBJECT_DIR = lib/widgets/CMakeFiles/PCBWidgets.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = lib/widgets/libPCBWidgets.a
+  TARGET_PDB = PCBWidgets.a.dbg
+
+
+#############################################
+# Utility command for edit_cache
+
+build lib/widgets/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets && /usr/bin/ccmake -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake cache editor...
+  pool = console
+  restat = 1
+
+build lib/widgets/edit_cache: phony lib/widgets/CMakeFiles/edit_cache.util
+
+
+#############################################
+# Utility command for rebuild_cache
+
+build lib/widgets/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets && /usr/bin/cmake --regenerate-during-build -S/home/devart/Development/Cpp/HomePCB -B/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build lib/widgets/rebuild_cache: phony lib/widgets/CMakeFiles/rebuild_cache.util
+
+
+#############################################
+# Utility command for PCBWidgets_autogen_timestamp_deps
+
+build lib/widgets/PCBWidgets_autogen_timestamp_deps: phony lib/graphicsviews/libPCBCursor.a lib/shapes/libPCBShapes.a
+
+
+#############################################
+# Utility command for PCBWidgets_autogen
+
+build lib/widgets/PCBWidgets_autogen: phony lib/widgets/CMakeFiles/PCBWidgets_autogen lib/widgets/PCBWidgets_autogen/timestamp lib/widgets/PCBWidgets_autogen/mocs_compilation.cpp lib/widgets/PCBWidgets_autogen_timestamp_deps
+
+
+#############################################
+# Custom command for lib/widgets/PCBWidgets_autogen/timestamp
+
+build lib/widgets/PCBWidgets_autogen/timestamp lib/widgets/PCBWidgets_autogen/mocs_compilation.cpp | ${cmake_ninja_workdir}lib/widgets/PCBWidgets_autogen/timestamp ${cmake_ninja_workdir}lib/widgets/PCBWidgets_autogen/mocs_compilation.cpp: CUSTOM_COMMAND /usr/lib64/qt6/libexec/moc /usr/lib64/qt6/libexec/uic || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a lib/widgets/PCBWidgets_autogen_timestamp_deps
+  COMMAND = cd /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets && /usr/bin/cmake -E cmake_autogen /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/CMakeFiles/PCBWidgets_autogen.dir/AutogenInfo.json Debug && /usr/bin/cmake -E touch /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/PCBWidgets_autogen/timestamp && /usr/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /home/devart/Development/Cpp/HomePCB /home/devart/Development/Cpp/HomePCB/lib/widgets /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/PCBWidgets_autogen/deps /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/d/17c02a430a45bea6210f19c14d03dc605d877004b12d2b243fa8f79829369528.d
+  DESC = Automatic MOC and UIC for target PCBWidgets
+  depfile = CMakeFiles/d/17c02a430a45bea6210f19c14d03dc605d877004b12d2b243fa8f79829369528.d
+  deps = gcc
+  restat = 1
+
+
+#############################################
+# Phony custom command for lib/widgets/CMakeFiles/PCBWidgets_autogen
+
+build lib/widgets/CMakeFiles/PCBWidgets_autogen | ${cmake_ninja_workdir}lib/widgets/CMakeFiles/PCBWidgets_autogen: phony lib/widgets/PCBWidgets_autogen/timestamp || lib/graphicsviews/PCBCursor_autogen lib/graphicsviews/PCBCursor_autogen_timestamp_deps lib/graphicsviews/libPCBCursor.a lib/shapes/PCBShapes_autogen lib/shapes/PCBShapes_autogen_timestamp_deps lib/shapes/libPCBShapes.a lib/widgets/PCBWidgets_autogen_timestamp_deps
 
 # =============================================================================
 # Target aliases.
+
+build PCBApplication: phony lib/homepcb/libPCBApplication.a
+
+build PCBApplication_autogen: phony lib/homepcb/PCBApplication_autogen
+
+build PCBApplication_autogen_timestamp_deps: phony lib/homepcb/PCBApplication_autogen_timestamp_deps
+
+build PCBCursor: phony lib/graphicsviews/libPCBCursor.a
+
+build PCBCursor_autogen: phony lib/graphicsviews/PCBCursor_autogen
+
+build PCBCursor_autogen_timestamp_deps: phony lib/graphicsviews/PCBCursor_autogen_timestamp_deps
+
+build PCBScene: phony lib/scene/libPCBScene.a
+
+build PCBScene_autogen: phony lib/scene/PCBScene_autogen
+
+build PCBScene_autogen_timestamp_deps: phony lib/scene/PCBScene_autogen_timestamp_deps
+
+build PCBShapes: phony lib/shapes/libPCBShapes.a
+
+build PCBShapes_autogen: phony lib/shapes/PCBShapes_autogen
+
+build PCBShapes_autogen_timestamp_deps: phony lib/shapes/PCBShapes_autogen_timestamp_deps
+
+build PCBViewer: phony lib/viewer/libPCBViewer.a
+
+build PCBViewer_autogen: phony lib/viewer/PCBViewer_autogen
+
+build PCBViewer_autogen_timestamp_deps: phony lib/viewer/PCBViewer_autogen_timestamp_deps
+
+build PCBWidgets: phony lib/widgets/libPCBWidgets.a
+
+build PCBWidgets_autogen: phony lib/widgets/PCBWidgets_autogen
+
+build PCBWidgets_autogen_timestamp_deps: phony lib/widgets/PCBWidgets_autogen_timestamp_deps
+
+build libPCBApplication.a: phony lib/homepcb/libPCBApplication.a
+
+build libPCBCursor.a: phony lib/graphicsviews/libPCBCursor.a
+
+build libPCBScene.a: phony lib/scene/libPCBScene.a
+
+build libPCBShapes.a: phony lib/shapes/libPCBShapes.a
+
+build libPCBViewer.a: phony lib/viewer/libPCBViewer.a
+
+build libPCBWidgets.a: phony lib/widgets/libPCBWidgets.a
 
 # =============================================================================
 # Folder targets.
@@ -274,14 +867,112 @@ build CMakeFiles/HomePCB_autogen | ${cmake_ninja_workdir}CMakeFiles/HomePCB_auto
 #############################################
 # Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
 
-build codegen: phony
+build codegen: phony lib/codegen
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib
+
+build lib/codegen: phony lib/shapes/codegen lib/graphicsviews/codegen lib/homepcb/codegen lib/scene/codegen lib/viewer/codegen lib/widgets/codegen
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews
+
+build lib/graphicsviews/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb
+
+build lib/homepcb/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene
+
+build lib/scene/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes
+
+build lib/shapes/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer
+
+build lib/viewer/codegen: phony
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets
+
+build lib/widgets/codegen: phony
 
 # =============================================================================
 
 #############################################
 # Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug
 
-build all: phony HomePCB
+build all: phony HomePCB lib/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib
+
+build lib/all: phony lib/shapes/all lib/graphicsviews/all lib/homepcb/all lib/scene/all lib/viewer/all lib/widgets/all
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews
+
+build lib/graphicsviews/all: phony lib/graphicsviews/libPCBCursor.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb
+
+build lib/homepcb/all: phony lib/homepcb/libPCBApplication.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene
+
+build lib/scene/all: phony lib/scene/libPCBScene.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes
+
+build lib/shapes/all: phony lib/shapes/libPCBShapes.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer
+
+build lib/viewer/all: phony lib/viewer/libPCBViewer.a
+
+# =============================================================================
+
+#############################################
+# Folder: /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets
+
+build lib/widgets/all: phony lib/widgets/libPCBWidgets.a
 
 # =============================================================================
 # Built-in targets
@@ -290,14 +981,14 @@ build all: phony HomePCB
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/cmake_install.cmake: RERUN_CMAKE | .qtc/package-manager/auto-setup.cmake /home/devart/Development/Cpp/HomePCB/CMakeLists.txt /usr/lib/cmake/Qt6/FindWrapAtomic.cmake /usr/lib/cmake/Qt6/FindWrapOpenGL.cmake /usr/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake /usr/lib/cmake/Qt6/QtFeature.cmake /usr/lib/cmake/Qt6/QtFeatureCommon.cmake /usr/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake /usr/lib/cmake/Qt6/QtPublicAppleHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /usr/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /usr/lib/cmake/Qt6/QtPublicGitHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake /usr/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTestHelpers.cmake /usr/lib/cmake/Qt6/QtPublicToolHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake /usr/lib64/cmake/Qt6/Qt6Config.cmake /usr/lib64/cmake/Qt6/Qt6ConfigExtras.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersion.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersionImpl.cmake /usr/lib64/cmake/Qt6/Qt6Dependencies.cmake /usr/lib64/cmake/Qt6/Qt6Targets.cmake /usr/lib64/cmake/Qt6/Qt6VersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6/QtInstallPaths.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfig.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreDependencies.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets-none.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfig.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusDependencies.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusMacros.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets-none.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets-none.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiDependencies.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiPlugins.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake /usr/share/cmake-4.1/Modules/CMakeCXXInformation.cmake /usr/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-4.1/Modules/CMakeGenericSystem.cmake /usr/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake-4.1/Modules/CheckLibraryExists.cmake /usr/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU.cmake /usr/share/cmake-4.1/Modules/FindOpenGL.cmake /usr/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-4.1/Modules/FindPackageMessage.cmake /usr/share/cmake-4.1/Modules/FindThreads.cmake /usr/share/cmake-4.1/Modules/FindVulkan.cmake /usr/share/cmake-4.1/Modules/GNUInstallDirs.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake-4.1/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/MacroAddFileDependencies.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-4.1/Modules/Platform/Linux.cmake /usr/share/cmake-4.1/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake
+build build.ninja /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/cmake_install.cmake /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/cmake_install.cmake /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/cmake_install.cmake /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/cmake_install.cmake /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/cmake_install.cmake /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/cmake_install.cmake /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/cmake_install.cmake /home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/cmake_install.cmake: RERUN_CMAKE | .qtc/package-manager/auto-setup.cmake /home/devart/Development/Cpp/HomePCB/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/graphicsviews/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/homepcb/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/scene/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/shapes/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/viewer/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/widgets/CMakeLists.txt /usr/lib/cmake/Qt6/FindWrapAtomic.cmake /usr/lib/cmake/Qt6/FindWrapOpenGL.cmake /usr/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake /usr/lib/cmake/Qt6/QtFeature.cmake /usr/lib/cmake/Qt6/QtFeatureCommon.cmake /usr/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake /usr/lib/cmake/Qt6/QtPublicAppleHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /usr/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /usr/lib/cmake/Qt6/QtPublicGitHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake /usr/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTestHelpers.cmake /usr/lib/cmake/Qt6/QtPublicToolHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake /usr/lib64/cmake/Qt6/Qt6Config.cmake /usr/lib64/cmake/Qt6/Qt6ConfigExtras.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersion.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersionImpl.cmake /usr/lib64/cmake/Qt6/Qt6Dependencies.cmake /usr/lib64/cmake/Qt6/Qt6Targets.cmake /usr/lib64/cmake/Qt6/Qt6VersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6/QtInstallPaths.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfig.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreDependencies.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets-none.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfig.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusDependencies.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusMacros.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets-none.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets-none.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiDependencies.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiPlugins.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake /usr/share/cmake-4.1/Modules/CMakeCXXInformation.cmake /usr/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-4.1/Modules/CMakeGenericSystem.cmake /usr/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake-4.1/Modules/CheckLibraryExists.cmake /usr/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU.cmake /usr/share/cmake-4.1/Modules/FindOpenGL.cmake /usr/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-4.1/Modules/FindPackageMessage.cmake /usr/share/cmake-4.1/Modules/FindThreads.cmake /usr/share/cmake-4.1/Modules/FindVulkan.cmake /usr/share/cmake-4.1/Modules/GNUInstallDirs.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake-4.1/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/MacroAddFileDependencies.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-4.1/Modules/Platform/Linux.cmake /usr/share/cmake-4.1/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build .qtc/package-manager/auto-setup.cmake /home/devart/Development/Cpp/HomePCB/CMakeLists.txt /usr/lib/cmake/Qt6/FindWrapAtomic.cmake /usr/lib/cmake/Qt6/FindWrapOpenGL.cmake /usr/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake /usr/lib/cmake/Qt6/QtFeature.cmake /usr/lib/cmake/Qt6/QtFeatureCommon.cmake /usr/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake /usr/lib/cmake/Qt6/QtPublicAppleHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /usr/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /usr/lib/cmake/Qt6/QtPublicGitHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake /usr/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTestHelpers.cmake /usr/lib/cmake/Qt6/QtPublicToolHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake /usr/lib64/cmake/Qt6/Qt6Config.cmake /usr/lib64/cmake/Qt6/Qt6ConfigExtras.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersion.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersionImpl.cmake /usr/lib64/cmake/Qt6/Qt6Dependencies.cmake /usr/lib64/cmake/Qt6/Qt6Targets.cmake /usr/lib64/cmake/Qt6/Qt6VersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6/QtInstallPaths.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfig.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreDependencies.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets-none.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfig.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusDependencies.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusMacros.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets-none.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets-none.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiDependencies.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiPlugins.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake /usr/share/cmake-4.1/Modules/CMakeCXXInformation.cmake /usr/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-4.1/Modules/CMakeGenericSystem.cmake /usr/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake-4.1/Modules/CheckLibraryExists.cmake /usr/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU.cmake /usr/share/cmake-4.1/Modules/FindOpenGL.cmake /usr/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-4.1/Modules/FindPackageMessage.cmake /usr/share/cmake-4.1/Modules/FindThreads.cmake /usr/share/cmake-4.1/Modules/FindVulkan.cmake /usr/share/cmake-4.1/Modules/GNUInstallDirs.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake-4.1/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/MacroAddFileDependencies.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-4.1/Modules/Platform/Linux.cmake /usr/share/cmake-4.1/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake: phony
+build .qtc/package-manager/auto-setup.cmake /home/devart/Development/Cpp/HomePCB/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/graphicsviews/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/homepcb/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/scene/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/shapes/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/viewer/CMakeLists.txt /home/devart/Development/Cpp/HomePCB/lib/widgets/CMakeLists.txt /usr/lib/cmake/Qt6/FindWrapAtomic.cmake /usr/lib/cmake/Qt6/FindWrapOpenGL.cmake /usr/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake /usr/lib/cmake/Qt6/QtFeature.cmake /usr/lib/cmake/Qt6/QtFeatureCommon.cmake /usr/lib/cmake/Qt6/QtPublicAndroidHelpers.cmake /usr/lib/cmake/Qt6/QtPublicAppleHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake /usr/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake /usr/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake /usr/lib/cmake/Qt6/QtPublicGitHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers.cmake /usr/lib/cmake/Qt6/QtPublicPluginHelpers_v2.cmake /usr/lib/cmake/Qt6/QtPublicSbomAttributionHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomCpeHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomFileHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomGenerationHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomLicenseHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomOpsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPurlHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomPythonHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomQtEntityHelpers.cmake /usr/lib/cmake/Qt6/QtPublicSbomSystemDepHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTargetHelpers.cmake /usr/lib/cmake/Qt6/QtPublicTestHelpers.cmake /usr/lib/cmake/Qt6/QtPublicToolHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake /usr/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake /usr/lib64/cmake/Qt6/Qt6Config.cmake /usr/lib64/cmake/Qt6/Qt6ConfigExtras.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersion.cmake /usr/lib64/cmake/Qt6/Qt6ConfigVersionImpl.cmake /usr/lib64/cmake/Qt6/Qt6Dependencies.cmake /usr/lib64/cmake/Qt6/Qt6Targets.cmake /usr/lib64/cmake/Qt6/Qt6VersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6/QtInstallPaths.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeEarlyPolicyHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeHelpers.cmake /usr/lib64/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfig.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigExtras.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersion.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreDependencies.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreMacros.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets-none.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreTargets.cmake /usr/lib64/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets-none.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake /usr/lib64/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfig.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusDependencies.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusMacros.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets-none.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusTargets.cmake /usr/lib64/cmake/Qt6DBus/Qt6DBusVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets-none.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake /usr/lib64/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiDependencies.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiPlugins.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6GuiVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QComposePlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSEmulatorIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsEglDeviceIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSKmsGbmIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEglFSX11IntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevKeyboardPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevMousePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTabletPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QEvdevTouchScreenPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QGtk3ThemePluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICNSPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QIbusPlatformInputContextPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJp2PluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLibInputPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QLinuxFbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QMngPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTgaPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTiffPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTsLibPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVkKhrDisplayIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QVncIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWaylandIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWbmpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QWebpPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbEglIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbGlxIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXcbIntegrationPluginTargets.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginConfig.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets-none.cmake /usr/lib64/cmake/Qt6Gui/Qt6QXdgDesktopPortalThemePluginTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets-none.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake /usr/lib64/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets-none.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake /usr/lib64/cmake/Qt6Widgets/Qt6WidgetsVersionlessAliasTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-none.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake /usr/lib64/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake /usr/share/cmake-4.1/Modules/CMakeCXXInformation.cmake /usr/share/cmake-4.1/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake /usr/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake /usr/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake /usr/share/cmake-4.1/Modules/CMakeGenericSystem.cmake /usr/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake /usr/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake /usr/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake /usr/share/cmake-4.1/Modules/CheckCXXCompilerFlag.cmake /usr/share/cmake-4.1/Modules/CheckCXXSourceCompiles.cmake /usr/share/cmake-4.1/Modules/CheckIncludeFileCXX.cmake /usr/share/cmake-4.1/Modules/CheckLibraryExists.cmake /usr/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Compiler/GNU.cmake /usr/share/cmake-4.1/Modules/FindOpenGL.cmake /usr/share/cmake-4.1/Modules/FindPackageHandleStandardArgs.cmake /usr/share/cmake-4.1/Modules/FindPackageMessage.cmake /usr/share/cmake-4.1/Modules/FindThreads.cmake /usr/share/cmake-4.1/Modules/FindVulkan.cmake /usr/share/cmake-4.1/Modules/GNUInstallDirs.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake /usr/share/cmake-4.1/Modules/Internal/CheckCompilerFlag.cmake /usr/share/cmake-4.1/Modules/Internal/CheckFlagCommonConfig.cmake /usr/share/cmake-4.1/Modules/Internal/CheckSourceCompiles.cmake /usr/share/cmake-4.1/Modules/Linker/GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/MacroAddFileDependencies.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linker/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU-CXX.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-GNU.cmake /usr/share/cmake-4.1/Modules/Platform/Linux-Initialize.cmake /usr/share/cmake-4.1/Modules/Platform/Linux.cmake /usr/share/cmake-4.1/Modules/Platform/UnixPaths.cmake CMakeCache.txt CMakeFiles/4.1.2/CMakeCXXCompiler.cmake CMakeFiles/4.1.2/CMakeSystem.cmake: phony
 
 
 #############################################

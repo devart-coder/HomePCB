@@ -1,7 +1,14 @@
 {
 	"InstallScripts" : 
 	[
-		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/cmake_install.cmake"
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/cmake_install.cmake",
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/cmake_install.cmake",
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/shapes/cmake_install.cmake",
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/graphicsviews/cmake_install.cmake",
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/homepcb/cmake_install.cmake",
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/scene/cmake_install.cmake",
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/viewer/cmake_install.cmake",
+		"/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/lib/widgets/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

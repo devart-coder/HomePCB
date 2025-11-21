@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/widgets/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "PCBWidgets_autogen_timestamp_deps::@878eb542d5f700f77d17"
+		}
+	],
+	"id" : "PCBWidgets_autogen::@878eb542d5f700f77d17",
+	"isGeneratorProvided" : true,
+	"name" : "PCBWidgets_autogen",
+	"paths" : 
+	{
+		"build" : "lib/widgets",
+		"source" : "lib/widgets"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/widgets/CMakeFiles/PCBWidgets_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/widgets/CMakeFiles/PCBWidgets_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/widgets/PCBWidgets_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

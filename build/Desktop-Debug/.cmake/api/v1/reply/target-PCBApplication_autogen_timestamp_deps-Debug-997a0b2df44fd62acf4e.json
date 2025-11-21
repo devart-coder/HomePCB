@@ -1,0 +1,50 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/homepcb/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 0,
+			"id" : "PCBShapes::@1a0fe78ef61522ca39e5"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PCBCursor::@3db9d0e9d87bf832f207"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PCBScene::@5b6903297d290a0cfa9b"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PCBViewer::@49d505f2e2a70ea15fb6"
+		},
+		{
+			"backtrace" : 0,
+			"id" : "PCBWidgets::@878eb542d5f700f77d17"
+		}
+	],
+	"id" : "PCBApplication_autogen_timestamp_deps::@42a297b8345f5505f50c",
+	"isGeneratorProvided" : true,
+	"name" : "PCBApplication_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/homepcb",
+		"source" : "lib/homepcb"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

@@ -1,0 +1,27 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/shapes/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"id" : "PCBShapes_autogen_timestamp_deps::@1a0fe78ef61522ca39e5",
+	"isGeneratorProvided" : true,
+	"name" : "PCBShapes_autogen_timestamp_deps",
+	"paths" : 
+	{
+		"build" : "lib/shapes",
+		"source" : "lib/shapes"
+	},
+	"sources" : [],
+	"type" : "UTILITY"
+}

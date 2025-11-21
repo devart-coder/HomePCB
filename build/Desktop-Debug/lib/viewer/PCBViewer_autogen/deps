@@ -1,0 +1,5 @@
+PCBViewer_autogen/timestamp: \
+	/home/devart/Development/Cpp/HomePCB/lib/viewer/CMakeLists.txt \
+	/home/devart/Development/Cpp/HomePCB/lib/viewer/PCBGraphicsViewer.cpp \
+	/home/devart/Development/Cpp/HomePCB/lib/viewer/PCBGraphicsViewer.h \
+	/usr/bin/cmake

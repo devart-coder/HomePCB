@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/shapes/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "PCBShapes_autogen_timestamp_deps::@1a0fe78ef61522ca39e5"
+		}
+	],
+	"id" : "PCBShapes_autogen::@1a0fe78ef61522ca39e5",
+	"isGeneratorProvided" : true,
+	"name" : "PCBShapes_autogen",
+	"paths" : 
+	{
+		"build" : "lib/shapes",
+		"source" : "lib/shapes"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/shapes/CMakeFiles/PCBShapes_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/shapes/CMakeFiles/PCBShapes_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/shapes/PCBShapes_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

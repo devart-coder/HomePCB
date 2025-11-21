@@ -1,0 +1,71 @@
+{
+	"backtrace" : 0,
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : 
+		[
+			"lib/viewer/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "PCBViewer_autogen_timestamp_deps::@49d505f2e2a70ea15fb6"
+		}
+	],
+	"id" : "PCBViewer_autogen::@49d505f2e2a70ea15fb6",
+	"isGeneratorProvided" : true,
+	"name" : "PCBViewer_autogen",
+	"paths" : 
+	{
+		"build" : "lib/viewer",
+		"source" : "lib/viewer"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/viewer/CMakeFiles/PCBViewer_autogen",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/viewer/CMakeFiles/PCBViewer_autogen.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop-Debug/lib/viewer/PCBViewer_autogen/timestamp.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}

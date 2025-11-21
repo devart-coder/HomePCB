@@ -498,70 +498,13 @@
 		"/usr/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake",
 		"/usr/lib/cmake/Qt6/QtPublicWindowsHelpers.cmake",
 		"/usr/share/cmake-4.1/Modules/CMakeFindDependencyMacro.cmake",
-		"/usr/lib64/cmake/Qt6/Qt6Dependencies.cmake",
-		"/usr/share/cmake-4.1/Modules/GNUInstallDirs.cmake"
+		"/usr/lib64/cmake/Qt6/Qt6Dependencies.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "/home/devart/Development/Cpp/HomePCB",
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "HomePCB_autogen/timestamp",
-	"HEADERS" : 
-	[
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/cursor/Cursor.h",
-			"MU",
-			"NFYAP3MOR4/moc_Cursor.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.h",
-			"MU",
-			"NFYAP3MOR4/moc_SpotF.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/gcodewidget.h",
-			"MU",
-			"UVLADIE3JM/moc_gcodewidget.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/graphicsviewer.h",
-			"MU",
-			"UVLADIE3JM/moc_graphicsviewer.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/homepcbmain.h",
-			"MU",
-			"UVLADIE3JM/moc_homepcbmain.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/linepcb.h",
-			"MU",
-			"UVLADIE3JM/moc_linepcb.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/linepcbpropertydialog.h",
-			"MU",
-			"UVLADIE3JM/moc_linepcbpropertydialog.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/scenepcb.h",
-			"MU",
-			"UVLADIE3JM/moc_scenepcb.cpp",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/tools/CursorToolbar.h",
-			"MU",
-			"MR466ZQLAD/moc_CursorToolbar.cpp",
-			null
-		]
-	],
+	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/include",
 	"MOC_COMPILATION_FILE" : "/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/HomePCB_autogen/mocs_compilation.cpp",
@@ -575,13 +518,19 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/devart/Development/Cpp/HomePCB/src/cursor",
-		"/home/devart/Development/Cpp/HomePCB/src/tools",
-		"/home/devart/Development/Cpp/HomePCB/src",
-		"/usr/include/qt6/QtCore",
-		"/usr/include/qt6",
-		"/usr/lib64/qt6/mkspecs/linux-g++",
+		"/home/devart/Development/Cpp/HomePCB/lib/graphicsviews/cursor",
+		"/home/devart/Development/Cpp/HomePCB/lib/homepcb",
+		"/home/devart/Development/Cpp/HomePCB/lib/shapes/RECURCIVE",
+		"/home/devart/Development/Cpp/HomePCB/lib/shapes/line",
+		"/home/devart/Development/Cpp/HomePCB/lib/shapes/line/settings",
+		"/home/devart/Development/Cpp/HomePCB/lib/scene",
+		"/home/devart/Development/Cpp/HomePCB/lib/widgets/gcode",
+		"/home/devart/Development/Cpp/HomePCB/lib/widgets/tools",
+		"/home/devart/Development/Cpp/HomePCB/lib/viewer",
 		"/usr/include/qt6/QtWidgets",
+		"/usr/include/qt6",
+		"/usr/include/qt6/QtCore",
+		"/usr/lib64/qt6/mkspecs/linux-g++",
 		"/usr/include/qt6/QtGui",
 		"/usr/include",
 		"/usr/include/c++/14.2.1",
@@ -624,48 +573,7 @@
 	"SETTINGS_FILE" : "/home/devart/Development/Cpp/HomePCB/build/Desktop-Debug/CMakeFiles/HomePCB_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
-		[ "/home/devart/Development/Cpp/HomePCB/main.cpp", "MU", null ],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/cursor/Cursor.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/cursor/SpotF.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/gcodewidget.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/graphicsviewer.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/homepcbmain.cpp",
-			"MU",
-			null
-		],
-		[ "/home/devart/Development/Cpp/HomePCB/src/scenepcb.cpp", "MU", null ],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/shapes/linepcb.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/shapes/settings/linepcbpropertydialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"/home/devart/Development/Cpp/HomePCB/src/tools/CursorToolbar.cpp",
-			"MU",
-			null
-		]
+		[ "/home/devart/Development/Cpp/HomePCB/main.cpp", "MU", null ]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

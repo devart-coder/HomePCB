@@ -1,10 +1,6 @@
-#include "homepcbmain.h"
+#include "PCBApplication.h"
 
 #include <QApplication>
-#include <QHBoxLayout>
-#include <QRectF>
-#include "graphicsviewer.h"
-#include "scenepcb.h"
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
