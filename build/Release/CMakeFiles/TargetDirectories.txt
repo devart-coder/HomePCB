@@ -1,3 +1,0 @@
-/home/devart/Development/Cpp/HomePCB/build/Release/CMakeFiles/HomePCB.dir
-/home/devart/Development/Cpp/HomePCB/build/Release/CMakeFiles/edit_cache.dir
-/home/devart/Development/Cpp/HomePCB/build/Release/CMakeFiles/rebuild_cache.dir
